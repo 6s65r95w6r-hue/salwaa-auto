@@ -72,6 +72,12 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_24_3: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Deux prières.', b: 'Une promesse du Paradis.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui accomplit les deux prières fraîches entrera au Paradis. »', src: 'AL-BOUKHÂRÎ N° 574 · MUSLIM N° 635' },
+    { type: 'list', mode: 'check', title: 'Les deux fraîches', items: [{ t: 'Fajr', s: 'avant le lever du soleil' }, { t: 'Asr', s: 'avant que la journée file' }] },
+    { type: 'big', a: 'Asr, c’est maintenant.', b: 'Pose le téléphone.', gold: true },
+    { type: 'payoff', a: 'Ne rate pas Asr.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_24_t: { theme: 'dark', scenes: [
     { type: 'big', a: 'Prier par habitude ou par intention ?' },
     { type: 'big', a: 'Même prière.', b: 'Pas la même valeur.', gold: true },
