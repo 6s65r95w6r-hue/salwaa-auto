@@ -1,0 +1,4 @@
+.env
+node_modules/
+sortie/*.mp4
+sortie/_frames/
