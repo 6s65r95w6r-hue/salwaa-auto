@@ -1,6 +1,6 @@
 # Salwaa — vidéos 100 % automatiques
 
-Chaque jour à 7 h, Claude (Cowork ou Claude Code) crée 3 vidéos, les exporte en MP4 avec un son, les met en ligne et les programme dans Buffer à 8 h, 12 h 30 et 20 h sur Instagram, Facebook et TikTok.
+Trois fois par jour (8 h, 12 h 30, 18 h 30), une tâche planifiée Claude dans le cloud crée une vidéo, la rend en MP4 avec un son, la pousse dans ce dépôt (lien public raw.githubusercontent.com) et la publie sur Instagram, Facebook et TikTok via Buffer. Aucun ordinateur allumé nécessaire.
 
 ## Installation (une seule fois, ~20 min)
 1. **Dossier** : décompresse ce dossier, par ex. dans `Documents/salwaa-auto`.
