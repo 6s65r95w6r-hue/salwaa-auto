@@ -72,6 +72,12 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_24_t: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Prier par habitude ou par intention ?' },
+    { type: 'big', a: 'Même prière.', b: 'Pas la même valeur.', gold: true },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Les actes ne valent que par les intentions. »', src: 'AL-BOUKHÂRÎ N° 1 · MUSLIM N° 1907' },
+    { type: 'list', mode: 'check', title: 'Avant ta prochaine prière', items: [{ t: 'Pose le téléphone' }, { t: 'Respire' }, { t: 'Renouvelle ton intention' }] },
+    { type: 'payoff', a: 'Prie pour Allah.', g: 'Salwaa s’occupe du reste.' }] },
 };
 
 function Big({ T, s, e, c, k }) {

@@ -31,13 +31,15 @@ const LOCAL = {
 const faces = [];
 for (const w of [500, 600, 700, 800, 900]) faces.push(`@font-face{font-family:'Poppins';font-weight:${w};src:url(http://fonts.local/p${w}.woff2) format('woff2')}`);
 for (const w of [400, 500]) faces.push(`@font-face{font-family:'Roboto Mono';font-weight:${w};src:url(http://fonts.local/m${w}.woff2) format('woff2')}`);
+// Symbole ﷺ (U+FDFA) : absent de Poppins et Roboto Mono. Une face par graisse, déclarée après les autres, avec la police Amiri.
+for (const [fam, ws] of [['Poppins', [500, 600, 700, 800, 900]], ['Roboto Mono', [400, 500]]]) for (const w of ws) faces.push(`@font-face{font-family:'${fam}';font-weight:${w};unicode-range:U+FDFA;src:url(http://fonts.local/a.woff2) format('woff2')}`);
 await page.route(/unpkg\.com|fonts\.googleapis\.com|fonts\.gstatic\.com|fonts\.local/, async (route) => {
   const u = route.request().url();
   try {
     if (u.includes('fonts.googleapis.com')) return route.fulfill({ contentType: 'text/css', body: faces.join('\n') });
     if (u.includes('fonts.local')) {
-      const m = u.match(/\/([pm])(\d+)\.woff2/);
-      const f = join(NM, m[1] === 'p' ? `@fontsource/poppins/files/poppins-latin-${m[2]}-normal.woff2` : `@fontsource/roboto-mono/files/roboto-mono-latin-${m[2]}-normal.woff2`);
+      const m = u.match(/\/([pma])(\d*)\.woff2/);
+      const f = m[1] === 'a' ? join(NM, '@fontsource/amiri/files/amiri-arabic-400-normal.woff2') : join(NM, m[1] === 'p' ? `@fontsource/poppins/files/poppins-latin-${m[2]}-normal.woff2` : `@fontsource/roboto-mono/files/roboto-mono-latin-${m[2]}-normal.woff2`);
       return route.fulfill({ contentType: 'font/woff2', headers: { 'access-control-allow-origin': '*' }, body: await readFile(f) });
     }
     const k = Object.keys(LOCAL).find((n) => u.endsWith(n));
@@ -49,6 +51,7 @@ const rel = page_.replace(/^videos\//, '');
 await page.goto(`http://localhost:${port}/${encodeURI(rel)}`, { waitUntil: 'networkidle' });
 const stage = page.locator('[data-om-exportable-video-with-duration-secs]');
 await stage.waitFor({ timeout: 30000 });
+await page.evaluate(() => Promise.all([...document.fonts].map((f) => f.load().catch(() => null))));
 await page.waitForFunction(() => document.fonts.ready.then(() => true));
 await page.waitForTimeout(1500);
 const dur = parseFloat(await stage.getAttribute('data-om-exportable-video-with-duration-secs'));

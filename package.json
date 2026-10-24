@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@babel/standalone": "7.29.0",
+    "@fontsource/amiri": "^5.0.0",
     "@fontsource/poppins": "^5.0.0",
     "@fontsource/roboto-mono": "^5.0.0",
     "playwright": "1.63.0",
