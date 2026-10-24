@@ -20,3 +20,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 
 ## Publications
 2026-10-24 · test (brouillons Buffer, non publié) · d2026_10_24_t · theme · Al-Boukhârî 1 / Muslim 1907 — les actes ne valent que par les intentions · son2 · validé par Karim
+2026-10-24 · 3 (18:30) · d2026_10_24_3 · serieux · Al-Boukhârî 574 / Muslim 635 — les deux prières fraîches (Fajr & Asr) · son3 · publié (shareNow) — Buffer IG 6adcdba03d5b27036b92acbc (sending), FB 6adcdbab3d5b27036b92b3aa (sent), TikTok 6adcdbb6e4be8a4d866a1707 (sending)
