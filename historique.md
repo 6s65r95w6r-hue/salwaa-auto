@@ -19,3 +19,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 - Al-Boukhârî 881 / Muslim 850 — heures de la Jumu'a
 
 ## Publications
+2026-10-24 · test (brouillons Buffer, non publié) · d2026_10_24_t · theme · Al-Boukhârî 1 / Muslim 1907 — les actes ne valent que par les intentions · son2 · validé par Karim
