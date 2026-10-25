@@ -72,6 +72,15 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_25_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Tu es quel réveil à Fajr ?' },
+    { type: 'list', mode: 'rank', items: [
+      { n: '01', t: 'Le snooze', s: '7 alarmes, 7 « encore 5 min ».' },
+      { n: '02', t: 'Le négociateur', s: '« Je prie à 7 h, ça compte presque. »' },
+      { n: '03', t: 'Le lève-tôt', s: 'Debout, wudu, deux rak‘a. Le sourire en plus.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Les deux rak‘a du Fajr valent mieux que le bas monde et tout ce qu’il contient. »', src: 'MUSLIM N° 725' },
+    { type: 'big', a: 'Deux rak‘a.', b: 'Plus précieuses que tout ce qui brille.', gold: true },
+    { type: 'payoff', a: 'Demain, sois le n°3.', g: 'Salwaa s’occupe du réveil.' }] },
   d2026_10_24_3: { theme: 'dark', scenes: [
     { type: 'big', a: 'Deux prières.', b: 'Une promesse du Paradis.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui accomplit les deux prières fraîches entrera au Paradis. »', src: 'AL-BOUKHÂRÎ N° 574 · MUSLIM N° 635' },
