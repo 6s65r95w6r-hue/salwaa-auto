@@ -72,6 +72,13 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_25_3: { theme: 'light', scenes: [
+    { type: 'big', a: 'Le temps libre, tu l’as perdu où ?' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Deux bienfaits dont beaucoup de gens sont lésés : la santé et le temps libre. »', src: 'AL-BOUKHÂRÎ N° 6412' },
+    { type: 'phone', app: 'Instagram', prayer: 'Maghrib', time: '17:52', caps: [
+      [0, '1. L’adhan sonne.'], [1.6, '2. Tes apps se bloquent.'],
+      [3.8, '3. Tu pries.'], [5.8, '4. Tu reprends ton temps.']] },
+    { type: 'payoff', a: 'Ton temps libre,', g: 'Salwaa le protège.' }] },
   d2026_10_25_2: { theme: 'dark', scenes: [
     { type: 'big', a: 'Tu pars juste après le salam ?' },
     { type: 'big', a: '33 · 33 · 34', b: 'Trois minutes qui effacent beaucoup.', gold: true },
