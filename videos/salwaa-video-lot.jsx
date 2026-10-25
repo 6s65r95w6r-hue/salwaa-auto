@@ -72,6 +72,12 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_25_2: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Tu pars juste après le salam ?' },
+    { type: 'big', a: '33 · 33 · 34', b: 'Trois minutes qui effacent beaucoup.', gold: true },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui dit après chaque prière 33 fois Subhan Allah, 33 fois Alhamdulillah, 33 fois Allahou akbar, ses péchés sont pardonnés, fussent-ils comme l’écume de la mer. »', src: 'MUSLIM N° 597' },
+    { type: 'list', mode: 'check', title: 'Après le salam', items: [{ t: 'Subhan Allah', s: '33 fois' }, { t: 'Alhamdulillah', s: '33 fois' }, { t: 'Allahou akbar', s: '34 fois' }] },
+    { type: 'payoff', a: 'Reste encore un instant.', g: 'Salwaa garde ton écran fermé.' }] },
   d2026_10_25_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Tu es quel réveil à Fajr ?' },
     { type: 'list', mode: 'rank', items: [
