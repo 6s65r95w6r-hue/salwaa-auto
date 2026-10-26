@@ -72,6 +72,15 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_26_2: { theme: 'light', scenes: [
+    { type: 'big', a: 'Ton excuse pour prier plus tard ?' },
+    { type: 'list', mode: 'rank', title: 'Les classiques', items: [
+      { n: '01', t: 'Juste une dernière vidéo', s: '…et c’est déjà la fin de l’heure.' },
+      { n: '02', t: 'Je suis en plein milieu', s: 'de ma série, de mon scroll, de ma vie.' },
+      { n: '03', t: 'J’y vais maintenant', s: 'Wudu, tapis, téléphone posé.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« La prière en groupe est supérieure à la prière faite seul de vingt-sept degrés. »', src: 'AL-BOUKHÂRÎ N° 645 · MUSLIM N° 650' },
+    { type: 'big', a: 'Vingt-sept fois plus.', b: 'Ça vaut plus qu’une vidéo.', gold: true },
+    { type: 'payoff', a: 'Sois le n°3.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_26_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Chaque fois que tu vas prier,', b: 'une table se prépare.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui se rend à la mosquée le matin ou le soir, Allah lui prépare une place d’hôte au Paradis chaque fois qu’il y va. »', src: 'AL-BOUKHÂRÎ N° 662 · MUSLIM N° 669' },
