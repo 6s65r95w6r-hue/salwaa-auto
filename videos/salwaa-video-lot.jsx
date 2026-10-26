@@ -72,6 +72,12 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_26_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Chaque fois que tu vas prier,', b: 'une table se prépare.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui se rend à la mosquée le matin ou le soir, Allah lui prépare une place d’hôte au Paradis chaque fois qu’il y va. »', src: 'AL-BOUKHÂRÎ N° 662 · MUSLIM N° 669' },
+    { type: 'big', a: 'Matin ou soir.', b: 'Chaque pas compte.', gold: true },
+    { type: 'list', mode: 'check', title: 'Avant de partir', items: [{ t: 'Wudu', s: 'depuis chez toi' }, { t: 'Téléphone posé' }, { t: 'Un pas après l’autre' }] },
+    { type: 'payoff', a: 'Ta table t’attend.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_25_3: { theme: 'light', scenes: [
     { type: 'big', a: 'Le temps libre, tu l’as perdu où ?' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Deux bienfaits dont beaucoup de gens sont lésés : la santé et le temps libre. »', src: 'AL-BOUKHÂRÎ N° 6412' },
