@@ -20,6 +20,7 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 - Muslim 725 — les deux rak'a du Fajr valent mieux que le bas monde
 - Muslim 597 — dhikr après la prière (33 · 33 · 34)
 - Al-Boukhârî 6412 — santé et temps libre, deux bienfaits dont beaucoup sont lésés
+- Al-Boukhârî 662 / Muslim 669 — hospitalité au Paradis à chaque aller à la mosquée
 
 ## Publications
 2026-10-24 · test (brouillons Buffer, non publié) · d2026_10_24_t · theme · Al-Boukhârî 1 / Muslim 1907 — les actes ne valent que par les intentions · son2 · validé par Karim
@@ -27,3 +28,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 2026-10-25 · 1 (08:00) · d2026_10_25_1 · humour · Muslim 725 — les deux rak'a du Fajr valent mieux que le bas monde · son4 · publié (shareNow) — Buffer IG 6adda8050b5343d070bc18ac (sending), FB 6adda80fe4be8a4d869517b3 (sent), TikTok 6adda8193d5b27036bbd72ad (sending)
 2026-10-25 · 2 (12:30) · d2026_10_25_2 · theme · Muslim 597 — dhikr 33/33/34 après chaque prière · son1 · publié (shareNow, URL raw par SHA 1bfdbd2 car main en cache 404) — Buffer IG 6adde6f5e4be8a4d86a466b3 (sending), FB 6adde700bd33ce99c36b66e2 (sent), TikTok 6adde709e4be8a4d86a469cf (sending)
 2026-10-25 · 3 (18:30) · d2026_10_25_3 · demo · Al-Boukhârî 6412 — santé et temps libre, deux bienfaits dont beaucoup sont lésés · son2 · publié (shareNow) — Buffer IG 6ade3b296887a2efc11791a6 (sending), FB 6ade3b333d5b27036be3e105 (sent), TikTok 6ade3b3be4be8a4d86bac525 (sending)
+2026-10-26 · 1 (08:00) · d2026_10_26_1 · serieux · Al-Boukhârî 662 / Muslim 669 — place d'hôte au Paradis à chaque aller à la mosquée · son3 · publié (shareNow) — Buffer IG 6adef99be4fd2be3e6580b78 (sending), FB 6adef9a6ba65356abc9504d2 (sent), TikTok 6adef9aee4fd2be3e6580da9 (sending)
