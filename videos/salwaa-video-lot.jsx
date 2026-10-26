@@ -72,6 +72,12 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_26_3: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Ton cœur est-il vivant', b: 'ou en veille ?' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui évoque son Seigneur et celui qui ne l’évoque pas sont comme le vivant et le mort. »', src: 'AL-BOUKHÂRÎ N° 6407' },
+    { type: 'list', mode: 'check', title: 'Réveille-le en 1 minute', items: [{ t: 'Subhan Allah' }, { t: 'Alhamdulillah' }, { t: 'Allahou akbar' }] },
+    { type: 'big', a: 'Une minute de dhikr.', b: 'Un cœur qui respire.', gold: true },
+    { type: 'payoff', a: 'Garde ton cœur vivant.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_26_2: { theme: 'light', scenes: [
     { type: 'big', a: 'Ton excuse pour prier plus tard ?' },
     { type: 'list', mode: 'rank', title: 'Les classiques', items: [
