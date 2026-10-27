@@ -72,6 +72,12 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_27_1: { theme: 'light', scenes: [
+    { type: 'big', a: 'Tout est bien pour le croyant.', b: 'Vraiment tout.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Étonnante est l’affaire du croyant : tout est bien pour lui. S’il reçoit un bienfait, il remercie, et c’est un bien pour lui ; s’il subit un malheur, il patiente, et c’est un bien pour lui. »', src: 'MUSLIM N° 2999' },
+    { type: 'list', mode: 'check', title: 'Deux réflexes gagnants', items: [{ t: 'Un bienfait ?', s: 'Alhamdulillah.' }, { t: 'Une épreuve ?', s: 'Patience, puis la prière.' }] },
+    { type: 'big', a: 'Dans les deux cas,', b: 'tu gagnes.', gold: true },
+    { type: 'payoff', a: 'Remercie. Patiente. Prie.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_26_3: { theme: 'dark', scenes: [
     { type: 'big', a: 'Ton cœur est-il vivant', b: 'ou en veille ?' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui évoque son Seigneur et celui qui ne l’évoque pas sont comme le vivant et le mort. »', src: 'AL-BOUKHÂRÎ N° 6407' },
