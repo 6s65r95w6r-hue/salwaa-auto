@@ -72,6 +72,13 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_27_3: { theme: 'light', scenes: [
+    { type: 'big', a: 'Ton téléphone ou l’adhan ?' },
+    { type: 'phone', app: 'TikTok', prayer: 'Maghrib', time: '17:48', caps: [
+      [0, '1. L’adhan sonne.'], [1.6, '2. Tes apps se bloquent.'],
+      [3.8, '3. Tu pries.'], [5.8, '4. Tu reprends ton écran.']] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Si les gens savaient ce qu’il y a dans l’appel à la prière et dans la première rangée, et qu’ils ne puissent l’obtenir qu’en tirant au sort, ils tireraient au sort. »', src: 'AL-BOUKHÂRÎ N° 615 · MUSLIM N° 437' },
+    { type: 'payoff', a: 'L’adhan d’abord.', g: 'Salwaa fait le reste.' }] },
   d2026_10_27_2: { theme: 'dark', scenes: [
     { type: 'big', a: 'Entre deux prières,', b: 'tes péchés s’effacent.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Les cinq prières, d’un vendredi à l’autre, d’un Ramadan à l’autre, effacent ce qu’il y a entre elles, tant que l’on évite les grands péchés. »', src: 'MUSLIM N° 233' },
