@@ -23,6 +23,7 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 - Al-Boukhârî 662 / Muslim 669 — hospitalité au Paradis à chaque aller à la mosquée
 - Al-Boukhârî 645 / Muslim 650 — la prière en groupe vaut 27 degrés de plus
 - Al-Boukhârî 6407 — le vivant et le mort (celui qui évoque Allah)
+- Al-Boukhârî 615 / Muslim 437 — l'adhan et la première rangée (tirer au sort)
 - Muslim 2999 — l'affaire du croyant : tout est bien (gratitude / patience)
 
 ## Publications
@@ -36,3 +37,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 2026-10-26 · 3 (18:30) · d2026_10_26_3 · theme · Al-Boukhârî 6407 — celui qui évoque son Seigneur est comme le vivant, l'autre comme le mort (dhikr) · son1 · publié (shareNow) — Buffer IG 6adf8c93fd9158056820a9d2 (sending), FB 6adf8c9e79c317817c00c1f7 (sent), TikTok 6adf8ca79a9f05d661fb069a (sending)
 2026-10-27 · 1 (08:00) · d2026_10_27_1 · theme · Muslim 2999 — tout est bien pour le croyant (gratitude et patience) · son2 · publié (shareNow) — Buffer IG 6ae04a9f6546b985f8d491b5 (sending), FB 6ae04aaa6546b985f8d492a4 (sent), TikTok 6ae04ab3da2ca338b14eb473 (sending)
 2026-10-27 · 2 (12:30) · d2026_10_27_2 · serieux · Muslim 233 — les cinq prières effacent ce qu'il y a entre elles (si on évite les grands péchés) · son3 · publié (shareNow) — Buffer IG 6ae08aae98c25f90461afcdd (sending), FB 6ae08ab983416db301ea91db (sent), TikTok 6ae08ac198c25f90461b0276 (sending)
+2026-10-27 · 3 (18:30) · d2026_10_27_3 · demo · Al-Boukhârî 615 / Muslim 437 — si les gens savaient ce qu'il y a dans l'adhan et la première rangée · son4 · publié (shareNow) — Buffer IG 6ae0de534f694510fb332bc0 (sending), FB 6ae0de5d1e9cd6ef0a526435 (sending), TikTok 6ae0de68431b6933a50233e5 (sending)
