@@ -23,6 +23,7 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 - Al-Boukhârî 662 / Muslim 669 — hospitalité au Paradis à chaque aller à la mosquée
 - Al-Boukhârî 645 / Muslim 650 — la prière en groupe vaut 27 degrés de plus
 - Al-Boukhârî 6407 — le vivant et le mort (celui qui évoque Allah)
+- Muslim 2999 — l'affaire du croyant : tout est bien (gratitude / patience)
 
 ## Publications
 2026-10-24 · test (brouillons Buffer, non publié) · d2026_10_24_t · theme · Al-Boukhârî 1 / Muslim 1907 — les actes ne valent que par les intentions · son2 · validé par Karim
@@ -33,3 +34,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 2026-10-26 · 1 (08:00) · d2026_10_26_1 · serieux · Al-Boukhârî 662 / Muslim 669 — place d'hôte au Paradis à chaque aller à la mosquée · son3 · publié (shareNow) — Buffer IG 6adef99be4fd2be3e6580b78 (sending), FB 6adef9a6ba65356abc9504d2 (sent), TikTok 6adef9aee4fd2be3e6580da9 (sending)
 2026-10-26 · 2 (12:30) · d2026_10_26_2 · humour · Al-Boukhârî 645 / Muslim 650 — prière en groupe 27 degrés au-dessus de la prière seul · son4 · publié (shareNow) — Buffer IG 6adf39d0b347bedfc1da46e2 (sending), FB 6adf39dbe814d8fcd1f9cb70 (sending), TikTok 6adf39e617249a591120c972 (sending)
 2026-10-26 · 3 (18:30) · d2026_10_26_3 · theme · Al-Boukhârî 6407 — celui qui évoque son Seigneur est comme le vivant, l'autre comme le mort (dhikr) · son1 · publié (shareNow) — Buffer IG 6adf8c93fd9158056820a9d2 (sending), FB 6adf8c9e79c317817c00c1f7 (sent), TikTok 6adf8ca79a9f05d661fb069a (sending)
+2026-10-27 · 1 (08:00) · d2026_10_27_1 · theme · Muslim 2999 — tout est bien pour le croyant (gratitude et patience) · son2 · publié (shareNow) — Buffer IG 6ae04a9f6546b985f8d491b5 (sending), FB 6ae04aaa6546b985f8d492a4 (sent), TikTok 6ae04ab3da2ca338b14eb473 (sending)
