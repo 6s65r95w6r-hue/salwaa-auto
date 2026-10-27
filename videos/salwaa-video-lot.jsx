@@ -72,6 +72,12 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_27_2: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Entre deux prières,', b: 'tes péchés s’effacent.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Les cinq prières, d’un vendredi à l’autre, d’un Ramadan à l’autre, effacent ce qu’il y a entre elles, tant que l’on évite les grands péchés. »', src: 'MUSLIM N° 233' },
+    { type: 'list', mode: 'check', title: 'Ta journée en 5 rendez-vous', items: [{ t: 'Fajr' }, { t: 'Dhuhr · Asr' }, { t: 'Maghrib · Isha' }] },
+    { type: 'big', a: 'Cinq rendez-vous.', b: 'Une page qui se nettoie.', gold: true },
+    { type: 'payoff', a: 'Ne manque aucun rendez-vous.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_27_1: { theme: 'light', scenes: [
     { type: 'big', a: 'Tout est bien pour le croyant.', b: 'Vraiment tout.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Étonnante est l’affaire du croyant : tout est bien pour lui. S’il reçoit un bienfait, il remercie, et c’est un bien pour lui ; s’il subit un malheur, il patiente, et c’est un bien pour lui. »', src: 'MUSLIM N° 2999' },
