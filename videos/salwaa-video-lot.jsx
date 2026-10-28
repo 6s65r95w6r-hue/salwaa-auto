@@ -72,6 +72,12 @@ const VIDEOS = {
     { type: 'big', a: 'Allah t’appelle 5 fois par jour.', b: 'Le seul appel qui compte vraiment.', gold: true },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Ô Bilal, appelle à la prière, qu’elle nous apporte le repos. »', src: 'ABÛ DÂWÛD N° 4985' },
     { type: 'payoff', a: 'Réponds au bon appel.', g: 'Salwaa s’occupe des autres.' }] },
+  d2026_10_28_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Tu as oublié une prière ?', b: 'Ce n’est pas la fin.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui oublie une prière ou s’endort sans l’avoir faite, qu’il la prie dès qu’il s’en souvient. »', src: 'AL-BOUKHÂRÎ N° 597 · MUSLIM N° 684' },
+    { type: 'list', mode: 'check', title: 'Le bon réflexe', items: [{ t: 'Tu t’en souviens ?', s: 'Maintenant.' }, { t: 'Wudu', s: 'sans attendre' }, { t: 'Prie-la', s: 'puis reprends ta journée' }] },
+    { type: 'big', a: 'Pas de culpabilité.', b: 'Juste un retour.', gold: true },
+    { type: 'payoff', a: 'Reviens dès que tu t’en souviens.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_27_3: { theme: 'light', scenes: [
     { type: 'big', a: 'Ton téléphone ou l’adhan ?' },
     { type: 'phone', app: 'TikTok', prayer: 'Maghrib', time: '17:48', caps: [
