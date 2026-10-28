@@ -9,6 +9,15 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_10_28_2: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Ta meilleure position de la journée ?' },
+    { type: 'list', mode: 'rank', title: 'Les positions du quotidien', items: [
+      { n: '01', t: 'Le dos courbé sur l’écran', s: 'la nuque en position scroll.' },
+      { n: '02', t: 'Allongé, téléphone au-dessus du visage', s: 'jusqu’à la chute du téléphone.' },
+      { n: '03', t: 'Le front au sol', s: 'là où tu es le plus proche.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Le serviteur est au plus proche de son Seigneur lorsqu’il est prosterné ; multipliez donc les invocations. »', src: 'MUSLIM N° 482' },
+    { type: 'big', a: 'Le plus près d’Allah,', b: 'c’est le front au sol.', gold: true },
+    { type: 'payoff', a: 'Pose ton téléphone. Prosterne-toi.', g: 'Salwaa s’occupe du reste.' }] },
   v02: { theme: 'dark', scenes: [
     { type: 'big', a: 'Les 4 types de personnes quand l’adhan retentit', b: 'Tu es lequel ?' },
     { type: 'list', mode: 'rank', items: [
