@@ -9,6 +9,12 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_10_30_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Le meilleur jour', b: 'de la semaine, c’est aujourd’hui.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Le meilleur jour sur lequel le soleil se lève est le vendredi : en lui Adam fut créé, en lui il fut introduit au Paradis. »', src: 'MUSLIM N° 854' },
+    { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
+    { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
+    { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_28_2: { theme: 'dark', scenes: [
     { type: 'big', a: 'Ta meilleure position de la journée ?' },
     { type: 'list', mode: 'rank', title: 'Les positions du quotidien', items: [
