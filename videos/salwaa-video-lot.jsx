@@ -9,6 +9,12 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_10_31_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Deux prières', b: 'que ton lit déteste.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Les prières les plus lourdes sont Isha et Fajr. Si les gens savaient ce qu’elles renferment, ils y viendraient, même en rampant. »', src: 'AL-BOUKHÂRÎ N° 657 · MUSLIM N° 651' },
+    { type: 'list', mode: 'check', title: 'Ce soir, essaie ça', items: [{ t: 'Isha à l’heure' }, { t: 'Téléphone loin du lit' }, { t: 'Fajr, premier réflexe' }] },
+    { type: 'big', a: 'Le plus lourd', b: 'est le plus lumineux.', gold: true },
+    { type: 'payoff', a: 'Lève-toi pour Fajr.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_30_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Le meilleur jour', b: 'de la semaine, c’est aujourd’hui.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Le meilleur jour sur lequel le soleil se lève est le vendredi : en lui Adam fut créé, en lui il fut introduit au Paradis. »', src: 'MUSLIM N° 854' },
