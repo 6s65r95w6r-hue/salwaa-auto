@@ -28,6 +28,7 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 - Al-Boukhârî 597 / Muslim 684 — prier dès qu'on se souvient d'une prière oubliée
 - Muslim 482 — le serviteur est au plus proche d'Allah en prosternation
 - Muslim 854 — le vendredi, meilleur jour sur lequel le soleil se lève
+- Al-Boukhârî 657 / Muslim 651 — Isha et Fajr, les plus lourdes pour les hypocrites (venir même en rampant)
 
 ## Publications
 2026-10-24 · test (brouillons Buffer, non publié) · d2026_10_24_t · theme · Al-Boukhârî 1 / Muslim 1907 — les actes ne valent que par les intentions · son2 · validé par Karim
@@ -44,3 +45,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 2026-10-28 · 1 (08:00) · d2026_10_28_1 · serieux · Al-Boukhârî 597 / Muslim 684 — prier dès qu'on se souvient d'une prière oubliée · son1 · publié (shareNow) — Buffer IG 6ae19c2e1b676814df9b3fc3 (sending), FB 6ae19c391d62943dedc9f63f (sent), TikTok 6ae19c411b676814df9b4498 (sending)
 2026-10-28 · 2 (12:30) · d2026_10_28_2 · humour · Muslim 482 — au plus proche d'Allah en prosternation · son2 · publié (shareNow, URL raw par SHA 9aeb587 car main en cache 404) — Buffer IG 6ae1dbf7d47ee8ef2fb34e57 (sending), FB 6ae1dc02768df719ceb97be7 (sent), TikTok 6ae1dc0b63bb1a485a29c205 (sending)
 2026-10-30 · 1 (08:00) · d2026_10_30_1 · theme · Muslim 854 — le vendredi, meilleur jour sur lequel le soleil se lève (Jumu'a / Al-Kahf) · son3 · publié (shareNow) — Buffer IG 6ae43f65a83a7fb63c9b9612 (sending), FB 6ae43f6fba1ca51fd3fd2fd7 (sent), TikTok 6ae43f77a83a7fb63c9b984b (sending)
+2026-10-31 · 1 (08:00) · d2026_10_31_1 · serieux · Al-Boukhârî 657 / Muslim 651 — Isha et Fajr, les plus lourdes, y venir même en rampant · son4 · publié (shareNow) — Buffer IG 6ae59083ceb491e585e00f94 (sending), FB 6ae5908eb84259308bc0ba9e (sent), TikTok 6ae59096eaa24d6f9a5d995d (sending)
