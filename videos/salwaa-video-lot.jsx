@@ -21,6 +21,15 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
     { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
     { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_01_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Les 5 piliers de ton dimanche ?' },
+    { type: 'list', mode: 'rank', title: 'Ton dimanche, version honnête', items: [
+      { n: '01', t: 'La grasse mat’', s: 'pilier officiel du week-end.' },
+      { n: '02', t: 'Le scroll du matin', s: '« juste 5 minutes » (il est 11 h).' },
+      { n: '03', t: 'La prière', s: 'le pilier qu’on ne remet pas à plus tard.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« L’Islam est bâti sur cinq piliers : attester qu’il n’y a de divinité qu’Allah et que Muhammad est Son messager, accomplir la prière, donner la zakât, faire le pèlerinage et jeûner le Ramadan. »', src: 'AL-BOUKHÂRÎ N° 8 · MUSLIM N° 16' },
+    { type: 'big', a: 'Un vrai pilier,', b: 'ça ne se décale pas.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord. Scrolle ensuite.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_28_2: { theme: 'dark', scenes: [
     { type: 'big', a: 'Ta meilleure position de la journée ?' },
     { type: 'list', mode: 'rank', title: 'Les positions du quotidien', items: [
