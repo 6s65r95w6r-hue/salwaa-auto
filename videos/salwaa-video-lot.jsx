@@ -21,6 +21,13 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
     { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
     { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_02_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Allah t’appelle. Tu scrolles ?' },
+    { type: 'phone', app: 'Instagram', prayer: 'Fajr', time: '06:24', caps: [
+      [0, '1. L’adhan du Fajr sonne.'], [1.6, '2. Tes apps se bloquent.'],
+      [3.8, '3. Tu pries.'], [5.8, '4. Tu reprends ton écran.']] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Notre Seigneur descend chaque nuit au ciel le plus proche, quand reste le dernier tiers de la nuit, et dit : Qui M’invoque, que Je lui réponde ? Qui Me demande, que Je lui donne ? Qui implore Mon pardon, que Je lui pardonne ? »', src: 'AL-BOUKHÂRÎ N° 1145 · MUSLIM N° 758' },
+    { type: 'payoff', a: 'Réponds à l’appel d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_01_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Les 5 piliers de ton dimanche ?' },
     { type: 'list', mode: 'rank', title: 'Ton dimanche, version honnête', items: [
