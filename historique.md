@@ -30,6 +30,7 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 - Muslim 854 — le vendredi, meilleur jour sur lequel le soleil se lève
 - Al-Boukhârî 657 / Muslim 651 — Isha et Fajr, les plus lourdes pour les hypocrites (venir même en rampant)
 - Al-Boukhârî 8 / Muslim 16 — l'Islam est bâti sur cinq piliers (la prière)
+- Al-Boukhârî 1145 / Muslim 758 — Allah descend au dernier tiers de la nuit (« Qui M'invoque ? »)
 
 ## Publications
 2026-10-24 · test (brouillons Buffer, non publié) · d2026_10_24_t · theme · Al-Boukhârî 1 / Muslim 1907 — les actes ne valent que par les intentions · son2 · validé par Karim
@@ -48,3 +49,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 2026-10-30 · 1 (08:00) · d2026_10_30_1 · theme · Muslim 854 — le vendredi, meilleur jour sur lequel le soleil se lève (Jumu'a / Al-Kahf) · son3 · publié (shareNow) — Buffer IG 6ae43f65a83a7fb63c9b9612 (sending), FB 6ae43f6fba1ca51fd3fd2fd7 (sent), TikTok 6ae43f77a83a7fb63c9b984b (sending)
 2026-10-31 · 1 (08:00) · d2026_10_31_1 · serieux · Al-Boukhârî 657 / Muslim 651 — Isha et Fajr, les plus lourdes, y venir même en rampant · son4 · publié (shareNow) — Buffer IG 6ae59083ceb491e585e00f94 (sending), FB 6ae5908eb84259308bc0ba9e (sent), TikTok 6ae59096eaa24d6f9a5d995d (sending)
 2026-11-01 · 1 (08:00) · d2026_11_01_1 · humour · Al-Boukhârî 8 / Muslim 16 — l'Islam est bâti sur cinq piliers (dont la prière) · son2 · publié (shareNow, URL raw par SHA 7c6181e car main en cache 404) — Buffer IG 6ae6e210f0984eef334fe2a6 (sending), FB 6ae6e223f0984eef334fe514 (sent), TikTok 6ae6e22a1ee172cd6de27d5d (sending)
+2026-11-02 · 1 (08:00) · d2026_11_02_1 · demo · Al-Boukhârî 1145 / Muslim 758 — Allah descend au dernier tiers de la nuit · son3 · publié (shareNow) — Buffer IG 6ae8348976279ec7eb99bb44 (sending), FB 6ae8349376279ec7eb99bc92 (sent), TikTok 6ae8349bc60bdbcc33dde50a (sending)
