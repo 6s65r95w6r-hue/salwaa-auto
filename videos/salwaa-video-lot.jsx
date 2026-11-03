@@ -21,6 +21,12 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
     { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
     { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_03_1: { theme: 'light', scenes: [
+    { type: 'big', a: 'Le Fajr, c’est', b: 'un Hajj offert.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui prie le Fajr en groupe, puis reste à invoquer Allah jusqu’au lever du soleil, puis prie deux rak’a, aura la récompense d’un Hajj et d’une ‘Umra complets, complets, complets. »', src: 'AT-TIRMIDHÎ N° 586 (HASAN)' },
+    { type: 'list', mode: 'check', title: 'Demain matin, essaie ça', items: [{ t: 'Fajr à l’heure' }, { t: 'Quelques minutes de dhikr' }, { t: 'Deux rak’a après le lever' }] },
+    { type: 'big', a: 'Le matin le plus', b: 'rentable de ta journée.', gold: true },
+    { type: 'payoff', a: 'Commence par Fajr.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_02_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Allah t’appelle. Tu scrolles ?' },
     { type: 'phone', app: 'Instagram', prayer: 'Fajr', time: '06:24', caps: [
