@@ -21,6 +21,12 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
     { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
     { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_04_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Mieux vaut un peu,', b: 'mais chaque jour.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Les actes les plus aimés d’Allah sont les plus réguliers, même s’ils sont peu nombreux. »', src: 'AL-BOUKHÂRÎ N° 6464 · MUSLIM N° 783' },
+    { type: 'list', mode: 'check', title: 'Petit mais constant', items: [{ t: 'Cinq prières à l’heure' }, { t: 'Deux minutes de dhikr' }, { t: 'Une page de Coran' }] },
+    { type: 'big', a: 'La régularité bat', b: 'l’intensité.', gold: true },
+    { type: 'payoff', a: 'Un pas par jour.', g: 'Salwaa t’aide à tenir.' }] },
   d2026_11_03_1: { theme: 'light', scenes: [
     { type: 'big', a: 'Le Fajr, c’est', b: 'un Hajj offert.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui prie le Fajr en groupe, puis reste à invoquer Allah jusqu’au lever du soleil, puis prie deux rak’a, aura la récompense d’un Hajj et d’une ‘Umra complets, complets, complets. »', src: 'AT-TIRMIDHÎ N° 586 (HASAN)' },
