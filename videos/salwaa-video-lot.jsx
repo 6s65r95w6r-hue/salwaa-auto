@@ -21,6 +21,15 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
     { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
     { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_05_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'L’adhan sonne.', b: 'Tu es lequel ?' },
+    { type: 'list', mode: 'rank', title: 'Les 3 profils', items: [
+      { n: '01', t: 'Le « j’ai pas entendu »', s: 'Mais il entend chaque notification.' },
+      { n: '02', t: 'Le « juste un reel »', s: 'Dix minutes plus tard, l’heure est passée.' },
+      { n: '03', t: 'Le téléphone posé', s: 'Wudu, tapis, et le cœur tranquille.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« La prière est une lumière. »', src: 'MUSLIM N° 223' },
+    { type: 'big', a: 'Une lumière,', b: 'pas une notification.', gold: true },
+    { type: 'payoff', a: 'Sois le n°3.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_04_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Mieux vaut un peu,', b: 'mais chaque jour.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Les actes les plus aimés d’Allah sont les plus réguliers, même s’ils sont peu nombreux. »', src: 'AL-BOUKHÂRÎ N° 6464 · MUSLIM N° 783' },
