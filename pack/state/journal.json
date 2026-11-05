@@ -1,0 +1,25 @@
+{
+  "note": "Updated at the end of every run. Never reuse a hadith within 90 days. Same theme never two days in a row. Angle 'telephone-vs-priere' at most 1 video in 5.",
+  "episodes": [
+    {
+      "date": "inconnue",
+      "id": "E-01",
+      "slug": "cinq-excuses-v2",
+      "hadith_ref": "Coran 63:9 (Al-Munafiqun)",
+      "theme": "distraction",
+      "angle": "telephone-vs-priere",
+      "hook": "Avec 5 excuses.",
+      "published": "inconnu (fichier de reference fourni par l'utilisateur)"
+    },
+    {
+      "date": "2026-11-04",
+      "id": "E00",
+      "slug": "premier-acte-priere",
+      "hadith_ref": "At-Tirmidhi 413 (Abu Hurayra), Sahih",
+      "theme": "priere",
+      "angle": "telephone-vs-priere",
+      "hook": "Encore 5 minutes sur ton telephone ?",
+      "published": "programmé le 2026-11-05 à 17:30 (Buffer)"
+    }
+  ]
+}
