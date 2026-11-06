@@ -8,7 +8,7 @@ Règles de choix : voir §1b. Plus petit numéro `todo` qui respecte les règles
 
 | # | Histoire (récit du hadith) | Thème | Piste de référence (à vérifier) | Accroche possible | Angle | Statut |
 |---|---|---|---|---|---|---|
-| 1 | Les trois hommes bloqués dans la grotte | sincérité | Al-Bukhârî 2272 · Muslim 2743 | « Une pierre bloque la grotte. Il ne leur reste que leurs actes cachés. » | actes-cachés | todo |
+| 1 | Les trois hommes bloqués dans la grotte | sincérité | Al-Bukhârî 2272 · Muslim 2743 | « Une pierre bloque la grotte. Il ne leur reste que leurs actes cachés. » | actes-cachés | done (2026-11-06) |
 | 2 | L'homme qui avait tué 99 personnes | repentir | Al-Bukhârî 3470 · Muslim 2766 | « 99 morts. Il demande s'il peut se repentir. » | repentir | todo |
 | 3 | La femme qui a donné à boire à un chien | miséricorde | Al-Bukhârî 3321 · Muslim 2245 | « Un seul geste. Un pardon. » | petit-acte | todo |
 | 4 | Kaʿb ibn Mâlik absent à Tabûk | vérité / repentir | Al-Bukhârî 4418 · Muslim 2769 | « Cinquante jours sans que personne ne lui parle. » | vérité | todo |
@@ -42,3 +42,4 @@ Règles de choix : voir §1b. Plus petit numéro `todo` qui respecte les règles
 ## Épisodes déjà faits
 - E-01 · Cinq excuses (Coran 63:9) : fichier de référence fourni, publication inconnue.
 - E00 · Le premier acte dont on rendra compte, c'est la prière (At-Tirmidhî 413) : vidéo livrée le 04/11/2026, publication en attente.
+- E01 · Les trois hommes dans la grotte (Al-Bukhârî 2272 / Muslim 2743) : vidéo du 06/11/2026, programmée 17:30.

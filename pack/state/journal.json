@@ -20,6 +20,16 @@
       "angle": "telephone-vs-priere",
       "hook": "Encore 5 minutes sur ton telephone ?",
       "published": "programmé le 2026-11-05 à 17:30 (Buffer)"
+    },
+    {
+      "date": "2026-11-06",
+      "id": "E01",
+      "slug": "grotte-trois-hommes",
+      "hadith_ref": "Al-Bukhari 2272 / Muslim 2743 (Ibn Umar), muttafaq alayh",
+      "theme": "sincerite",
+      "angle": "actes-caches",
+      "hook": "Trois hommes. Une grotte.",
+      "published": "programmé le 2026-11-06 à 17:30 (Buffer)"
     }
   ]
 }
