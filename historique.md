@@ -28,6 +28,7 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 - Al-Boukhârî 597 / Muslim 684 — prier dès qu'on se souvient d'une prière oubliée
 - Muslim 482 — le serviteur est au plus proche d'Allah en prosternation
 - Muslim 854 — le vendredi, meilleur jour sur lequel le soleil se lève
+- Muslim 857 — ghusl, Jumu'a, silence pendant le sermon (péchés pardonnés)
 - Al-Boukhârî 657 / Muslim 651 — Isha et Fajr, les plus lourdes pour les hypocrites (venir même en rampant)
 - Al-Boukhârî 8 / Muslim 16 — l'Islam est bâti sur cinq piliers (la prière)
 - Al-Boukhârî 1145 / Muslim 758 — Allah descend au dernier tiers de la nuit (« Qui M'invoque ? »)
@@ -53,3 +54,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 2026-11-03 · 1 (08:00) · d2026_11_03_1 · serieux · At-Tirmidhî 586 (hasan) — Fajr en groupe puis dhikr jusqu'au lever du soleil, récompense d'un Hajj et d'une 'Umra · son4 · publié (shareNow, URL raw main 404 quelques secondes puis 200) — Buffer IG 6ae9855c3b00665c737be29b (sending), FB 6ae9856764e1ad8ea2ec0bf9 (sent), TikTok 6ae9856f3b00665c737bf089 (sending)
 2026-11-04 · 1 (08:00) · d2026_11_04_1 · theme · Al-Boukhârî 6464 / Muslim 783 — les actes les plus aimés d'Allah sont les plus réguliers, même peu nombreux · son1 · publié (shareNow) — Buffer IG 6aead6672b43f8ba7d7135cc (sending), FB 6aead672394911f9f11d7a25 (sent), TikTok 6aead67ac63bd995bd153ba9 (sending)
 2026-11-05 · 1 (08:00) · d2026_11_05_1 · humour · Muslim 223 — la prière est une lumière · son3 · publié (shareNow) — Buffer IG 6aec282a7877e0eab27d035b (sending), FB 6aec2835660b2991f1589a8e (sent), TikTok 6aec283b80f7fd0537f5e235 (sending)
+2026-11-06 · 1 (08:00) · d2026_11_06_1 · theme · Muslim 857 — ghusl, Jumu'a, silence pendant le sermon : péchés pardonnés jusqu'à la Jumu'a suivante · son1 · publié (shareNow) — Buffer IG 6aed798986fe9b83797ab301 (sending), FB 6aed799386fe9b83797ab6d4 (sent), TikTok 6aed799cc1e74b84e5d0b3aa (sending)
