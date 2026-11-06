@@ -21,6 +21,12 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
     { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
     { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_06_1: { theme: 'light', scenes: [
+    { type: 'big', a: 'Vendredi.', b: 'Un jour à ne pas rater.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui fait le ghusl, puis vient à la Jumu’a, prie ce qui lui a été prescrit, puis garde le silence jusqu’à la fin du sermon, ses péchés entre cette Jumu’a et la suivante lui seront pardonnés. »', src: 'MUSLIM N° 857' },
+    { type: 'list', mode: 'check', title: 'Ton vendredi en 3 gestes', items: [{ t: 'Le ghusl et du parfum' }, { t: 'Sourate Al-Kahf' }, { t: 'Écouter le sermon, téléphone rangé' }] },
+    { type: 'big', a: 'Une semaine nouvelle', b: 'commence ici.', gold: true },
+    { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa protège ta Jumu’a.' }] },
   d2026_11_05_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'L’adhan sonne.', b: 'Tu es lequel ?' },
     { type: 'list', mode: 'rank', title: 'Les 3 profils', items: [
