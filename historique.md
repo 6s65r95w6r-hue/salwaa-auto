@@ -33,6 +33,7 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 - Al-Boukhârî 8 / Muslim 16 — l'Islam est bâti sur cinq piliers (la prière)
 - Al-Boukhârî 1145 / Muslim 758 — Allah descend au dernier tiers de la nuit (« Qui M'invoque ? »)
 - At-Tirmidhî 586 (hasan) — Fajr en groupe + dhikr jusqu'au lever du soleil + 2 rak'a = récompense d'un Hajj et d'une 'Umra complets
+- Al-Boukhârî 631 — « Priez comme vous m'avez vu prier »
 ## Publications
 2026-10-24 · test (brouillons Buffer, non publié) · d2026_10_24_t · theme · Al-Boukhârî 1 / Muslim 1907 — les actes ne valent que par les intentions · son2 · validé par Karim
 2026-10-24 · 3 (18:30) · d2026_10_24_3 · serieux · Al-Boukhârî 574 / Muslim 635 — les deux prières fraîches (Fajr & Asr) · son3 · publié (shareNow) — Buffer IG 6adcdba03d5b27036b92acbc (sending), FB 6adcdbab3d5b27036b92b3aa (sent), TikTok 6adcdbb6e4be8a4d866a1707 (sending)
@@ -55,3 +56,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 2026-11-04 · 1 (08:00) · d2026_11_04_1 · theme · Al-Boukhârî 6464 / Muslim 783 — les actes les plus aimés d'Allah sont les plus réguliers, même peu nombreux · son1 · publié (shareNow) — Buffer IG 6aead6672b43f8ba7d7135cc (sending), FB 6aead672394911f9f11d7a25 (sent), TikTok 6aead67ac63bd995bd153ba9 (sending)
 2026-11-05 · 1 (08:00) · d2026_11_05_1 · humour · Muslim 223 — la prière est une lumière · son3 · publié (shareNow) — Buffer IG 6aec282a7877e0eab27d035b (sending), FB 6aec2835660b2991f1589a8e (sent), TikTok 6aec283b80f7fd0537f5e235 (sending)
 2026-11-06 · 1 (08:00) · d2026_11_06_1 · theme · Muslim 857 — ghusl, Jumu'a, silence pendant le sermon : péchés pardonnés jusqu'à la Jumu'a suivante · son1 · publié (shareNow) — Buffer IG 6aed798986fe9b83797ab301 (sending), FB 6aed799386fe9b83797ab6d4 (sent), TikTok 6aed799cc1e74b84e5d0b3aa (sending)
+2026-11-07 · 1 (08:00) · d2026_11_07_1 · demo · Al-Boukhârî 631 — « Priez comme vous m'avez vu prier » · son2 · publié (shareNow) — Buffer IG 6aeecb2c9214322f68d5c5d3 (sending), FB 6aeecb37af7e526d4305fb3b (sent), TikTok 6aeecb3e004e4879a73bc552 (sending)
