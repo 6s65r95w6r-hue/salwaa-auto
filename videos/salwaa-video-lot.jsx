@@ -21,6 +21,14 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
     { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
     { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_07_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Ton écran passe avant la prière ?' },
+    { type: 'phone', app: 'TikTok', prayer: 'Dhouhr', time: '12:17', caps: [
+      [0, '1. L’heure de Dhouhr arrive.'], [1.6, '2. TikTok se bloque.'],
+      [3.8, '3. Tu pries.'], [5.8, '4. Tu reprends ton écran.']] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Priez comme vous m’avez vu prier. »', src: 'AL-BOUKHÂRÎ N° 631' },
+    { type: 'big', a: 'Une prière bien faite,', b: 'ça commence à l’heure.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord. Scrolle ensuite.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_06_1: { theme: 'light', scenes: [
     { type: 'big', a: 'Vendredi.', b: 'Un jour à ne pas rater.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui fait le ghusl, puis vient à la Jumu’a, prie ce qui lui a été prescrit, puis garde le silence jusqu’à la fin du sermon, ses péchés entre cette Jumu’a et la suivante lui seront pardonnés. »', src: 'MUSLIM N° 857' },
