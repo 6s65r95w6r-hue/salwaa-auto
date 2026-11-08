@@ -21,6 +21,15 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
     { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
     { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_08_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Tes excuses', b: 'pour retarder la prière ?' },
+    { type: 'list', mode: 'rank', title: 'Le top 3 des classiques', items: [
+      { n: '01', t: 'Le « je finis juste ça »', s: 'Ça, c’est une série entière.' },
+      { n: '02', t: 'Le « je prie après »', s: 'Après quoi ? Personne ne sait.' },
+      { n: '03', t: 'Le « Allah est Pardonneur »', s: 'Vrai. Mais prie quand même à l’heure.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« L’invocation faite entre l’adhan et l’iqama n’est pas rejetée. »', src: 'ABÛ DÂWÛD N° 521 · AT-TIRMIDHÎ N° 212' },
+    { type: 'big', a: 'Entre l’adhan et l’iqama,', b: 'une porte reste ouverte.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_07_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Ton écran passe avant la prière ?' },
     { type: 'phone', app: 'TikTok', prayer: 'Dhouhr', time: '12:17', caps: [
