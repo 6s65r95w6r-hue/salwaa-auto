@@ -21,6 +21,12 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Fais-en un vrai vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Du ghusl et du parfum' }, { t: 'La prière de Jumu’a à l’heure' }] },
     { type: 'big', a: 'Un jour béni.', b: 'Ne le laisse pas filer.', gold: true },
     { type: 'payoff', a: 'Vendredi mubarak.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_09_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Chaque matin,', b: '3 nœuds à défaire.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Le Diable fait trois nœuds sur la nuque de chacun pendant son sommeil. Si l’un évoque Allah, un nœud se défait ; s’il fait ses ablutions, un autre ; s’il prie, un autre : il se lève alors plein d’entrain et l’âme pure. »', src: 'AL-BOUKHÂRÎ N° 1142 · MUSLIM N° 776' },
+    { type: 'list', mode: 'check', title: 'Les 3 nœuds', items: [{ t: 'Évoquer Allah' }, { t: 'Faire ses ablutions' }, { t: 'Prier' }] },
+    { type: 'big', a: 'Lève-toi léger,', b: 'l’âme pure.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_08_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Tes excuses', b: 'pour retarder la prière ?' },
     { type: 'list', mode: 'rank', title: 'Le top 3 des classiques', items: [
