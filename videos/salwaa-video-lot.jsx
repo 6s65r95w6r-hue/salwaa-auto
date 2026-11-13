@@ -9,6 +9,15 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_13_3: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Ton temps libre,', b: 'tu le passes où ?' },
+    { type: 'list', mode: 'rank', title: 'Le top 3 du temps « perdu »', items: [
+      { n: '01', t: 'Le « juste 5 minutes »', s: 'Ça fait 47 minutes. (exemple)' },
+      { n: '02', t: 'Le scroll sans fin', s: 'On cherche quoi, déjà ?' },
+      { n: '03', t: 'La vidéo « une dernière »', s: 'Celle d’avant aussi était la dernière.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Fait partie de la belle pratique de l’Islam d’un homme : délaisser ce qui ne le concerne pas. »', src: 'AT-TIRMIDHÎ N° 2317 · HASAN' },
+    { type: 'big', a: 'Moins de bruit inutile,', b: 'plus de présence à la prière.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_13_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Vendredi :', b: 'une heure où Allah exauce.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Le vendredi, il y a une heure où aucun serviteur musulman, debout en prière, ne demande un bien à Allah sans qu’Il le lui accorde. »', src: 'AL-BOUKHÂRÎ N° 935 · MUSLIM N° 852' },
@@ -219,7 +228,7 @@ const VIDEOS = {
     { type: 'payoff', a: 'Ta table t’attend.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_25_3: { theme: 'light', scenes: [
     { type: 'big', a: 'Le temps libre, tu l’as perdu où ?' },
-    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Deux bienfaits dont beaucoup de gens sont lésés : la santé et le temps libre. »', src: 'AL-BOUKHÂRÎ N° 6412' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Fait partie de la belle pratique de l’Islam d’un homme : délaisser ce qui ne le concerne pas. »', src: 'AT-TIRMIDHÎ N° 2317 · HASAN' },
     { type: 'phone', app: 'Instagram', prayer: 'Maghrib', time: '17:52', caps: [
       [0, '1. L’adhan sonne.'], [1.6, '2. Tes apps se bloquent.'],
       [3.8, '3. Tu pries.'], [5.8, '4. Tu reprends ton temps.']] },
