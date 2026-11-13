@@ -228,7 +228,7 @@ const VIDEOS = {
     { type: 'payoff', a: 'Ta table t’attend.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_10_25_3: { theme: 'light', scenes: [
     { type: 'big', a: 'Le temps libre, tu l’as perdu où ?' },
-    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Fait partie de la belle pratique de l’Islam d’un homme : délaisser ce qui ne le concerne pas. »', src: 'AT-TIRMIDHÎ N° 2317 · HASAN' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Deux bienfaits dont beaucoup de gens sont lésés : la santé et le temps libre. »', src: 'AL-BOUKHÂRÎ N° 6412' },
     { type: 'phone', app: 'Instagram', prayer: 'Maghrib', time: '17:52', caps: [
       [0, '1. L’adhan sonne.'], [1.6, '2. Tes apps se bloquent.'],
       [3.8, '3. Tu pries.'], [5.8, '4. Tu reprends ton temps.']] },
