@@ -9,6 +9,12 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_13_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Vendredi :', b: 'une heure où Allah exauce.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Le vendredi, il y a une heure où aucun serviteur musulman, debout en prière, ne demande un bien à Allah sans qu’Il le lui accorde. »', src: 'AL-BOUKHÂRÎ N° 935 · MUSLIM N° 852' },
+    { type: 'list', mode: 'check', title: 'Ce vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Beaucoup de salawat' }, { t: 'Une invocation sincère' }] },
+    { type: 'big', a: 'Pose ton téléphone.', b: 'Lève les mains.', gold: true },
+    { type: 'payoff', a: 'Prie, puis demande.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_10_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Deux phrases légères,', b: 'très lourdes en récompense.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Deux paroles légères sur la langue, lourdes dans la balance, aimées du Miséricordieux : Subhan Allah wa bihamdihi, Subhan Allah al-Azim. »', src: 'AL-BOUKHÂRÎ N° 6406 · MUSLIM N° 2694' },
