@@ -9,6 +9,12 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_14_1: { theme: 'light', scenes: [
+    { type: 'big', a: 'Tes péchés', b: 'sortent avec l’eau.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui fait ses ablutions et les fait parfaitement, ses péchés sortent de son corps, jusque de dessous ses ongles. »', src: 'MUSLIM N° 245' },
+    { type: 'list', mode: 'check', title: 'Avant de prier', items: [{ t: 'Les mains, le visage' }, { t: 'Les bras, la tête' }, { t: 'Les pieds, sans se presser' }] },
+    { type: 'big', a: 'Quelques gouttes,', b: 'un cœur plus léger.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_13_3: { theme: 'dark', scenes: [
     { type: 'big', a: 'Ton temps libre,', b: 'tu le passes où ?' },
     { type: 'list', mode: 'rank', title: 'Le top 3 du temps « perdu »', items: [
