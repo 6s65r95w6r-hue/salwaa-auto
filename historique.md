@@ -75,3 +75,5 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 2026-11-16 · perso (IG/FB/TikTok 13:30) · salwaa_2026_11_16_sans_avec · promo sans/avec (13 s) · aucun texte religieux · son généré · programmé — Buffer IG 6af8c97ae5a113497aa93620, FB 6af8c97bc5b364e06216b929, TikTok 6af8c97cb9a106584c6bb2c5
 2026-11-17 · perso (IG/FB/TikTok 13:30) · salwaa_2026_11_17_defi · promo défi 7 jours (12,8 s) · aucun texte religieux · son généré · programmé — Buffer IG 6af8c97ce86a5789a6cf2e08, FB 6af8c97db9a106584c6bb334, TikTok 6af8c97ec5b364e06216ba01
 2026-11-15 · 1 (08:00) · d2026_11_15_1 · humour · At-Tirmidhî 413 / Abû Dâwûd 864 (sahih) — la prière, premier acte dont on rendra compte · son3 · publié (shareNow) — Buffer IG 6af956f8e5a113497acf382c (sending), FB 6af95703e86a5789a6f49048 (sent), TikTok 6af9570ec5b364e0623c3704 (sending)
+
+2026-11-15 · perso (IG/FB/TikTok 20:00) · salwaa_2026_11_15_reaction · réaction (clip IA) + démo réelle de l'app (14 s) · aucun texte religieux · voix du clip + bruitages · programmé
