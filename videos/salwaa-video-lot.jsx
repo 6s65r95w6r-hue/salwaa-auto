@@ -47,6 +47,12 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Ce vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Beaucoup de salawat' }, { t: 'Une invocation sincère' }] },
     { type: 'big', a: 'Pose ton téléphone.', b: 'Lève les mains.', gold: true },
     { type: 'payoff', a: 'Prie, puis demande.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_15_3: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Le meilleur cadeau', b: 'qu’on puisse recevoir.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui s’efforce d’être patient, Allah le rendra patient. Nul n’a reçu un don meilleur et plus vaste que la patience. »', src: 'AL-BOUKHÂRÎ N° 1469 · MUSLIM N° 1053' },
+    { type: 'list', mode: 'check', title: 'La patience, ça s’entraîne', items: [{ t: 'Attendre avant de répondre' }, { t: 'Lâcher le téléphone 5 minutes' }, { t: 'Prier à l’heure, même fatigué' }] },
+    { type: 'big', a: 'Un petit effort', b: 'chaque jour.', gold: true },
+    { type: 'payoff', a: 'Prie, puis respire.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_10_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Deux phrases légères,', b: 'très lourdes en récompense.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Deux paroles légères sur la langue, lourdes dans la balance, aimées du Miséricordieux : Subhan Allah wa bihamdihi, Subhan Allah al-Azim. »', src: 'AL-BOUKHÂRÎ N° 6406 · MUSLIM N° 2694' },
