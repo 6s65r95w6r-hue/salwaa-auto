@@ -77,3 +77,4 @@ Format : date · créneau · id · type · hadith (source) · son · statut
 2026-11-15 · 1 (08:00) · d2026_11_15_1 · humour · At-Tirmidhî 413 / Abû Dâwûd 864 (sahih) — la prière, premier acte dont on rendra compte · son3 · publié (shareNow) — Buffer IG 6af956f8e5a113497acf382c (sending), FB 6af95703e86a5789a6f49048 (sent), TikTok 6af9570ec5b364e0623c3704 (sending)
 
 2026-11-15 · perso (IG/FB/TikTok 20:00) · salwaa_2026_11_15_reaction · réaction (clip IA) + démo réelle de l'app (14 s) · aucun texte religieux · voix du clip + bruitages · programmé 20:00 — Buffer TikTok 6af97b7076c23bf1c76daae9, IG 6af97b71c5b364e06246eb30, FB 6af97b71918fe79d2ed3a1e1
+2026-11-15 · 3 (18:30) · d2026_11_15_3 · theme · Al-Boukhârî 1469 / Muslim 1053 — la patience, le plus beau don · son1 · publié (shareNow) — Buffer IG 6af9eaa8ee359588b53fc228 (sending), FB 6af9eab455ad64be50484df8 (sent), TikTok 6af9eabeee359588b53fc666 (sending)
