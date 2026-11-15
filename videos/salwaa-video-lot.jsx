@@ -17,6 +17,15 @@ const VIDEOS = {
     { type: 'hadith', kicker: 'ALLAH DIT (HADITH QUDSI)', q: '« Mon serviteur ne se rapproche pas de Moi par quelque chose que J’aime davantage que ce que Je lui ai rendu obligatoire. »', src: 'AL-BOUKHÂRÎ N° 6502' },
     { type: 'big', a: 'L’obligatoire d’abord.', b: 'Le reste suit.', gold: true },
     { type: 'payoff', a: 'Prie d’abord. Scrolle ensuite.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_15_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Le premier compte', b: 'du Jour J ?' },
+    { type: 'list', mode: 'rank', title: 'Ce qu’on croit compter le plus', items: [
+      { n: '01', t: 'Le nombre d’abonnés', s: 'Le compteur adore se croire important. (exemple)' },
+      { n: '02', t: 'Les notifications en retard', s: 'Elles attendront, promis.' },
+      { n: '03', t: 'La prière', s: 'Et c’est elle qu’on regardera en premier.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Le premier acte dont le serviteur rendra compte le Jour de la Résurrection sera la prière. Si elle est en ordre, il aura réussi et gagné. »', src: 'AT-TIRMIDHÎ N° 413 · ABÛ DÂWÛD N° 864 · SAHIH' },
+    { type: 'big', a: 'Commence par', b: 'ce qui compte en premier.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_14_1: { theme: 'light', scenes: [
     { type: 'big', a: 'Tes péchés', b: 'sortent avec l’eau.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui fait ses ablutions et les fait parfaitement, ses péchés sortent de son corps, jusque de dessous ses ongles. »', src: 'MUSLIM N° 245' },
