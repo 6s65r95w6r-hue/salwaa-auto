@@ -47,6 +47,12 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Ce vendredi', items: [{ t: 'Sourate Al-Kahf' }, { t: 'Beaucoup de salawat' }, { t: 'Une invocation sincère' }] },
     { type: 'big', a: 'Pose ton téléphone.', b: 'Lève les mains.', gold: true },
     { type: 'payoff', a: 'Prie, puis demande.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_16_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Avant de commenter,', b: 'souviens-toi de ça.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Que celui qui croit en Allah et au Jour dernier dise du bien, ou qu’il se taise. »', src: 'AL-BOUKHÂRÎ N° 6018 · MUSLIM N° 47' },
+    { type: 'list', mode: 'check', title: 'Avant de poster ou répondre', items: [{ t: 'Est-ce utile ?' }, { t: 'Est-ce bienveillant ?' }, { t: 'Sinon, je me tais' }] },
+    { type: 'big', a: 'Un mot doux,', b: 'une belle récompense.', gold: true },
+    { type: 'payoff', a: 'Prie, puis parle bien.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_15_3: { theme: 'dark', scenes: [
     { type: 'big', a: 'Le meilleur cadeau', b: 'qu’on puisse recevoir.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui s’efforce d’être patient, Allah le rendra patient. Nul n’a reçu un don meilleur et plus vaste que la patience. »', src: 'AL-BOUKHÂRÎ N° 1469 · MUSLIM N° 1053' },
