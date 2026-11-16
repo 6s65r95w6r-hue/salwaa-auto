@@ -9,6 +9,15 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_16_3: { theme: 'light', scenes: [
+    { type: 'big', a: 'Les excuses', b: 'pour repousser Isha.' },
+    { type: 'list', mode: 'rank', title: 'Le top 3 du soir', items: [
+      { n: '01', t: 'Juste un épisode de plus', s: 'Le fameux « dernier » épisode. (exemple)' },
+      { n: '02', t: 'Je prie dans cinq minutes', s: 'Les cinq minutes ont une drôle de durée.' },
+      { n: '03', t: 'Je suis déjà bien installé', s: 'Le canapé gagne souvent. Il peut perdre.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui accomplit la prière de l’Isha en groupe, c’est comme s’il avait veillé la moitié de la nuit. »', src: 'MUSLIM N° 656' },
+    { type: 'big', a: 'Une prière à l’heure,', b: 'une nuit plus lumineuse.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_14_3: { theme: 'dark', scenes: [
     { type: 'big', a: 'Ton écran,', b: 'ou ta prière ?' },
     { type: 'phone', app: 'Instagram', prayer: 'Maghrib', time: '17:03', caps: [
