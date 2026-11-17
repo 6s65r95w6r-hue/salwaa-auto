@@ -9,6 +9,12 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_17_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Ton corps te doit', b: 'une aumône ce matin.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Chaque matin, une aumône est due pour chacune de vos articulations. Et les deux rak’a de la Duha suffisent à cela. »', src: 'MUSLIM N° 720' },
+    { type: 'list', mode: 'check', title: 'Une matinée bien lancée', items: [{ t: 'Prier Fajr à l’heure' }, { t: 'Deux rak’a de Duha plus tard' }, { t: 'Un dhikr avant le scroll' }] },
+    { type: 'big', a: 'Deux rak’a.', b: 'Toute une matinée remerciée.', gold: true },
+    { type: 'payoff', a: 'Prie, puis avance.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_16_3: { theme: 'light', scenes: [
     { type: 'big', a: 'Les excuses', b: 'pour repousser Isha.' },
     { type: 'list', mode: 'rank', title: 'Le top 3 du soir', items: [
