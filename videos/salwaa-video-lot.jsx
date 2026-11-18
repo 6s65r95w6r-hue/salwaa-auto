@@ -9,6 +9,12 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_18_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Ton Fajr', b: 'te met sous protection.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui accomplit la prière du Fajr est sous la protection d’Allah. »', src: 'MUSLIM N° 657' },
+    { type: 'list', mode: 'check', title: 'Un Fajr qui change la journée', items: [{ t: 'Se lever malgré le lit chaud' }, { t: 'Prier avant le téléphone' }, { t: 'Commencer la journée protégé' }] },
+    { type: 'big', a: 'Quelques minutes,', b: 'toute une journée gardée.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_17_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Ton corps te doit', b: 'une aumône ce matin.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Chaque matin, une aumône est due pour chacune de vos articulations. Et les deux rak’a de la Duha suffisent à cela. »', src: 'MUSLIM N° 720' },
