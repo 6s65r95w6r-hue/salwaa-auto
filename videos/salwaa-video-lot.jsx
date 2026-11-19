@@ -9,6 +9,15 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_19_1: { theme: 'light', scenes: [
+    { type: 'big', a: 'Les excuses', b: 'pour repousser Asr.' },
+    { type: 'list', mode: 'rank', title: 'Le top 3 de l’après-midi', items: [
+      { n: '01', t: 'Je finis juste ce mail', s: 'Le mail qui en appelle dix autres. (exemple)' },
+      { n: '02', t: 'Il reste plein de temps', s: 'Le soleil descend, lui, sans prévenir.' },
+      { n: '03', t: 'Je prie en rentrant', s: 'La prière peut passer avant le trajet.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui manque la prière de l’Asr, c’est comme s’il avait perdu sa famille et ses biens. »', src: 'AL-BOUKHÂRÎ N° 552 · MUSLIM N° 626' },
+    { type: 'big', a: 'Asr à l’heure,', b: 'rien de perdu.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_18_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Ton Fajr', b: 'te met sous protection.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui accomplit la prière du Fajr est sous la protection d’Allah. »', src: 'MUSLIM N° 657' },
