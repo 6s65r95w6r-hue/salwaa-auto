@@ -9,6 +9,28 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_20_h1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Un jour, tu prieras', b: 'ta dernière prière.' },
+    { type: 'big', a: 'Et tu ne sauras pas', b: 'que c’était elle.', gold: true },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Quand tu te lèves pour ta prière, prie comme quelqu’un qui fait ses adieux. »', src: 'IBN MÂJAH N° 4171 · HASAN' },
+    { type: 'list', mode: 'check', title: 'Prier comme si c’était la dernière', items: [{ t: 'Poser le téléphone avant' }, { t: 'Prendre son temps en prosternation' }, { t: 'Oublier la suite, juste un instant' }] },
+    { type: 'payoff', a: 'Prie comme si c’était la dernière.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_20_h2: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Ta pause TikTok', b: 'ne te repose pas.' },
+    { type: 'phone', app: 'TikTok', prayer: 'Dhuhr', time: '12:48', caps: [
+      [0, '1. L’heure de Dhuhr arrive.'], [1.6, '2. TikTok se met en pause.'],
+      [3.8, '3. Tu pries cinq minutes.'], [5.8, '4. Tu reviens plus léger.']] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ DISAIT', q: '« Ô Bilal, appelle à la prière : repose-nous par elle. »', src: 'ABÛ DÂWÛD N° 4985 · SAHIH' },
+    { type: 'payoff', a: 'La vraie pause, c’est la prière.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_20_h3: { theme: 'light', scenes: [
+    { type: 'big', a: 'Les excuses', b: 'pour rater Fajr.' },
+    { type: 'list', mode: 'rank', title: 'Le top 3 du réveil', items: [
+      { n: '01', t: 'Encore cinq minutes', s: 'Le snooze a gagné… encore. (exemple)' },
+      { n: '02', t: 'Il fait trop froid', s: 'La couette, ce piège de novembre.' },
+      { n: '03', t: 'Je prierai en me levant', s: 'Le soleil, lui, se lève avant toi.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« N’entrera pas en Enfer celui qui prie avant le lever du soleil et avant son coucher. »', src: 'MUSLIM N° 634' },
+    { type: 'big', a: 'Un réveil difficile,', b: 'une récompense immense.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_20_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Vendredi,', b: 'ta protection de la semaine.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui mémorise dix versets du début de la sourate Al-Kahf sera protégé du Dajjâl. »', src: 'MUSLIM N° 809' },
