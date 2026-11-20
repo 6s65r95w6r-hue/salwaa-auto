@@ -9,6 +9,12 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_20_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Vendredi,', b: 'ta protection de la semaine.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui mémorise dix versets du début de la sourate Al-Kahf sera protégé du Dajjâl. »', src: 'MUSLIM N° 809' },
+    { type: 'list', mode: 'check', title: 'Un vendredi bien commencé', items: [{ t: 'Lire Al-Kahf, même quelques versets' }, { t: 'Prier à l’heure, sans repousser' }, { t: 'Multiplier les salutations sur le Prophète ﷺ' }] },
+    { type: 'big', a: 'Quelques versets,', b: 'une lumière pour la semaine.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_19_1: { theme: 'light', scenes: [
     { type: 'big', a: 'Les excuses', b: 'pour repousser Asr.' },
     { type: 'list', mode: 'rank', title: 'Le top 3 de l’après-midi', items: [
