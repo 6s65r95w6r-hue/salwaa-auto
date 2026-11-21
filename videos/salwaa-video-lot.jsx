@@ -22,6 +22,12 @@ const VIDEOS = {
       [3.8, '3. Tu pries cinq minutes.'], [5.8, '4. Tu reviens plus léger.']] },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ DISAIT', q: '« Ô Bilal, appelle à la prière : repose-nous par elle. »', src: 'ABÛ DÂWÛD N° 4985 · SAHIH' },
     { type: 'payoff', a: 'La vraie pause, c’est la prière.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_21_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Cinq prières,', b: 'un engagement d’Allah.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui fait bien ses ablutions, accomplit les cinq prières à leur heure, et parfait leur inclinaison et leur recueillement, a auprès d’Allah un engagement de lui pardonner. »', src: 'ABÛ DÂWÛD N° 425 · SAHÎH' },
+    { type: 'list', mode: 'check', title: 'Une prière bien faite', items: [{ t: 'Des ablutions soignées' }, { t: 'À l’heure, sans repousser' }, { t: 'Avec calme et recueillement' }] },
+    { type: 'big', a: 'À l’heure, avec calme,', b: 'une promesse t’attend.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_20_h3: { theme: 'light', scenes: [
     { type: 'big', a: 'Les excuses', b: 'pour rater Fajr.' },
     { type: 'list', mode: 'rank', title: 'Le top 3 du réveil', items: [
