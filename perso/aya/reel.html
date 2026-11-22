@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Salwaa — Aya 20:14</title>
+<style>
+  :root{--night:#0A1118;--gold:#D4AF37;--light:#F4E8C1;--ink:#EDE6D3}
+  html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--night)}
+  #gl{position:absolute;inset:0;width:1080px;height:1920px}
+  .ov{position:absolute;left:0;right:0;text-align:center;will-change:transform,opacity;text-shadow:0 4px 34px rgba(10,17,24,.95),0 2px 8px rgba(10,17,24,.9)}
+  #veil{position:absolute;left:0;right:0;top:0;height:1150px;background:linear-gradient(#0A1118 0%,rgba(10,17,24,.92) 55%,rgba(10,17,24,0) 100%)}
+  #dim{position:absolute;inset:0;background:#0A1118;opacity:0}
+  .fr{font-family:Poppins,sans-serif;color:var(--ink);letter-spacing:-0.02em}
+  .g{color:var(--gold)}
+  #brand{top:130px;font:600 40px Poppins;color:var(--light);display:flex;justify-content:center;align-items:center;gap:16px;letter-spacing:.02em}
+  #brand img{width:62px;height:62px;border-radius:16px}
+  #hook{top:330px}
+  #hook .l{display:block;font-weight:700;font-size:96px;line-height:1.12}
+  #hook .w{display:inline-block}
+  #ar{top:300px;direction:rtl;font-family:Amiri,serif;font-weight:700;font-size:150px;color:var(--light);line-height:1.5}
+  #ar .w{display:inline-block;margin:0 14px}
+  #tr{top:610px;font-size:58px;font-weight:500;line-height:1.3;padding:0 90px}
+  #src{top:800px;font-size:42px;font-weight:600;color:#E6C55A;letter-spacing:.04em}
+  #end{top:300px}
+  #end img{width:220px;height:220px;border-radius:52px;display:block;margin:0 auto 46px}
+  #end .t{font:700 74px Poppins;color:var(--light);letter-spacing:-0.02em}
+  #bar{margin:48px auto 0;width:700px;height:120px;border-radius:60px;background:#F4E8C1;display:flex;align-items:center;padding:0 46px;box-sizing:border-box;gap:28px}
+  #bar svg{flex:none}
+  #typed{font:600 60px Poppins;color:#0A1118;text-shadow:none}
+  #caret{width:5px;height:64px;background:#0A1118}
+  #gp{margin-top:34px;font:500 44px Poppins;color:var(--ink)}
+  #prog{position:absolute;top:0;left:0;height:14px;width:1080px;background:var(--gold);transform-origin:0 0}
+</style></head>
+<body>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="veil"></div><div id="dim"></div><div id="prog"></div>
+<div id="brand" class="ov"><img src="logo-salwaa.png">salwaa</div>
+<div id="hook" class="ov fr">
+  <span class="l"><span class="w">Ton</span> <span class="w">téléphone</span></span>
+  <span class="l"><span class="w">peut</span> <span class="w">attendre.</span></span>
+  <span class="l g" style="margin-top:22px"><span class="w">Ta</span> <span class="w">prière,</span> <span class="w">non.</span></span>
+</div>
+<div id="ar" class="ov"><span class="w">وَأَقِمِ</span><span class="w">الصَّلَاةَ</span><span class="w">لِذِكْرِي</span></div>
+<div id="tr" class="ov fr">« Accomplis la prière<br>pour te souvenir de Moi. »</div>
+<div id="src" class="ov fr">CORAN · SOURATE TÂ-HÂ 20:14</div>
+<div id="end" class="ov fr">
+  <img src="logo-salwaa.png">
+  <div class="t">Salwaa : Focus &amp; Salah</div>
+  <div id="bar"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#0A1118" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg><span id="typed"></span><span id="caret"></span></div>
+  <div id="gp">sur Google Play</div>
+</div>
+
+<script type="module">
+import * as THREE from './three/build/three.module.js';
+const DUR = 12.0;
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const clamp = (x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const ease = x => 1 - Math.pow(1-clamp(x),3);                       // easeOutCubic
+const spring = (x, z=0.55, w=14) => { if (x<=0) return 0;            // ressort amorti, forme fermée
+  const wd = w*Math.sqrt(1-z*z); return 1 - Math.exp(-z*w*x)*(Math.cos(wd*x) + z*w/wd*Math.sin(wd*x)); };
+const win = (t,a,b,fi=0.35,fo=0.35) => clamp((t-a)/fi)*clamp((b-t)/fo);   // fenêtre d'apparition
+function mulberry(a){return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+
+// ---------- scène ----------
+const renderer = new THREE.WebGLRenderer({canvas:$('#gl'), antialias:true, preserveDrawingBuffer:true});
+renderer.setPixelRatio(1); renderer.setSize(1080,1920,false);
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.outputColorSpace = THREE.SRGBColorSpace;
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#0A1118');
+scene.fog = new THREE.FogExp2('#0A1118', 0.075);
+const cam = new THREE.PerspectiveCamera(42, 1080/1920, 0.1, 100);
+
+// arc brisé (mihrab) : côtés droits + deux arcs qui se croisent en pointe
+function archShape(w, h, rise){
+  const s = new THREE.Shape(), r = w*0.9;
+  s.moveTo(-w/2, 0); s.lineTo(-w/2, h);
+  const n = 40;
+  for (let i=1;i<=n;i++){ const a=i/n; s.lineTo(-w/2 + (w/2)*a, h + rise*Math.sin(a*Math.PI/2)**0.8); }
+  for (let i=1;i<=n;i++){ const a=i/n; s.lineTo((w/2)*a, h + rise*Math.cos(a*Math.PI/2)**0.8); }
+  s.lineTo(w/2, 0); s.lineTo(-w/2, 0); return s;
+}
+const AW=2.4, AH=3.1, AR=1.35;
+const wallShape = new THREE.Shape(); wallShape.moveTo(-9,0); wallShape.lineTo(9,0); wallShape.lineTo(9,12); wallShape.lineTo(-9,12); wallShape.lineTo(-9,0);
+wallShape.holes.push(new THREE.Path(archShape(AW,AH,AR).getPoints()));
+const wall = new THREE.Mesh(new THREE.ExtrudeGeometry(wallShape,{depth:0.6,bevelEnabled:false}),
+  new THREE.MeshStandardMaterial({color:'#101b25', roughness:0.95}));
+wall.position.z = -0.6; scene.add(wall);
+
+// filet or qui suit le contour de l'arc
+const pts = archShape(AW+0.12,AH,AR+0.07).getPoints(80).slice(0,-1).map(p=>new THREE.Vector3(p.x,p.y,0.02));
+const curve = new THREE.CatmullRomCurve3(pts.filter((p,i)=>i>0||true), false);
+const rim = new THREE.Mesh(new THREE.TubeGeometry(curve, 400, 0.022, 8, false), new THREE.MeshBasicMaterial({color:'#D4AF37'}));
+scene.add(rim);
+
+// lumière derrière l'arc : dégradé radial (shader)
+const glowMat = new THREE.ShaderMaterial({ transparent:true, depthWrite:false, uniforms:{k:{value:1}},
+  vertexShader:`varying vec2 v; void main(){ v=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.); }`,
+  fragmentShader:`varying vec2 v; uniform float k; void main(){ vec2 d=(v-vec2(.5,.38))*vec2(1.,1.25); float r=length(d);
+    vec3 c=mix(vec3(0.957,0.91,0.757), vec3(0.83,0.69,0.22), smoothstep(0.,.45,r));
+    gl_FragColor=vec4(c, k*smoothstep(.62,.0,r)); }`});
+const glow = new THREE.Mesh(new THREE.PlaneGeometry(7,9), glowMat); glow.position.set(0,2.6,-2.2); scene.add(glow);
+
+// sol
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(40,40), new THREE.MeshStandardMaterial({color:'#0d1620', roughness:0.55, metalness:0.2}));
+floor.rotation.x = -Math.PI/2; scene.add(floor);
+
+// faisceau de lumière qui sort de l'arc vers le sol
+const shaftMat = new THREE.ShaderMaterial({ transparent:true, depthWrite:false, blending:THREE.AdditiveBlending, uniforms:{k:{value:1}},
+  vertexShader:`varying vec2 v; void main(){ v=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.); }`,
+  fragmentShader:`varying vec2 v; uniform float k; void main(){ float a=smoothstep(0.,.35,v.x)*smoothstep(1.,.65,v.x)*(1.-v.y*.15);
+    gl_FragColor=vec4(vec3(0.957,0.91,0.757), .16*a*k); }`});
+const shaft = new THREE.Mesh(new THREE.PlaneGeometry(AW*1.05, 6.2), shaftMat);
+shaft.rotation.x = -Math.PI/2; shaft.position.set(0,0.012,3.0); scene.add(shaft);
+
+// tapis de prière posé dans la lumière (texture dessinée)
+const tc = document.createElement('canvas'); tc.width=512; tc.height=1024; const x=tc.getContext('2d');
+x.fillStyle='#13202b'; x.fillRect(0,0,512,1024);
+x.strokeStyle='#D4AF37'; x.lineWidth=14; x.strokeRect(30,30,452,964); x.lineWidth=4; x.strokeRect(62,62,388,900);
+x.beginPath(); x.moveTo(110,420); x.lineTo(110,250); x.quadraticCurveTo(256,90,402,250); x.lineTo(402,420); x.stroke();
+for (let i=0;i<9;i++){ x.fillStyle='#D4AF37'; x.fillRect(96+i*38,920,14,14); }
+const rugTex = new THREE.CanvasTexture(tc); rugTex.colorSpace = THREE.SRGBColorSpace; rugTex.anisotropy = 8;
+const rug = new THREE.Mesh(new THREE.PlaneGeometry(1.15,2.3), new THREE.MeshStandardMaterial({map:rugTex, roughness:0.9}));
+rug.rotation.x = -Math.PI/2; rug.position.set(0,0.02,1.9); scene.add(rug);
+
+// poussière dorée : positions = fonctions fermées du temps (aucun état entre images)
+const NP = 1600, rnd = mulberry(7), base = new Float32Array(NP*4);
+for (let i=0;i<NP;i++){ base[i*4]=(rnd()-.5)*7; base[i*4+1]=rnd()*6.5; base[i*4+2]=-1.5+rnd()*8; base[i*4+3]=rnd()*6.283; }
+const pg = new THREE.BufferGeometry(); const pos = new Float32Array(NP*3);
+pg.setAttribute('position', new THREE.BufferAttribute(pos,3));
+const dot = document.createElement('canvas'); dot.width=dot.height=32; const dx=dot.getContext('2d');
+const gr=dx.createRadialGradient(16,16,0,16,16,16); gr.addColorStop(0,'rgba(255,240,200,1)'); gr.addColorStop(1,'rgba(255,240,200,0)'); dx.fillStyle=gr; dx.fillRect(0,0,32,32);
+const pmat = new THREE.PointsMaterial({size:0.035, map:new THREE.CanvasTexture(dot), color:'#E9CF7A', transparent:true, depthWrite:false, blending:THREE.AdditiveBlending, opacity:.85});
+scene.add(new THREE.Points(pg, pmat));
+
+scene.add(new THREE.AmbientLight('#2a3a4a', 0.6));
+const warm = new THREE.PointLight('#F4E8C1', 22, 14, 1.6); warm.position.set(0,2.4,-0.4); scene.add(warm);
+
+// ---------- contrat de rendu ----------
+const hookW = $$('#hook .w'), arW = $$('#ar .w');
+window.renderAt = function(t){
+  // caméra : travelling avant à vitesse constante en espace log, léger décalage vertical
+  const p = clamp(t/DUR), z = 12.5*Math.pow(8.6/12.5, p);
+  cam.position.set(0.18*Math.sin(t*0.35), 1.7 + 0.2*p, z); cam.lookAt(0, 3.55, 0);
+  // la lumière s'allume pendant le verset
+  const k = (0.32 + 0.3*ease((t-3.0)/1.6)) * (1 - 0.35*ease((t-8.6)/0.6));
+  glowMat.uniforms.k.value = k; shaftMat.uniforms.k.value = 0.4 + 0.6*ease((t-3.0)/1.6);
+  warm.intensity = 10 + 10*ease((t-3.0)/1.6);
+  for (let i=0;i<NP;i++){ const b=i*4, ph=base[b+3];
+    pos[i*3]   = base[b] + 0.18*Math.sin(t*0.5+ph);
+    pos[i*3+1] = (base[b+1] + t*0.09 + 0.12*Math.sin(t*0.8+ph*2)) % 6.5;
+    pos[i*3+2] = base[b+2] + 0.1*Math.cos(t*0.4+ph); }
+  pg.attributes.position.needsUpdate = true;
+  renderer.render(scene, cam);
+
+  // ---------- texte ----------
+  $('#dim').style.opacity = 0.62*ease((t-8.6)/0.5);
+  $('#prog').style.transform = `scaleX(${clamp(t/DUR)})`;
+  $('#brand').style.opacity = win(t,0.2,8.4,0.4,0.4);
+  const hw = [0.15,0.3,0.6,0.75,1.25,1.4,1.55];
+  hookW.forEach((e,i)=>{ const s=spring(t-hw[i]); e.style.opacity=clamp((t-hw[i])/0.12)*clamp((3.0-t)/0.3);
+    e.style.transform=`translateY(${(1-s)*60}px)`; });
+  const ap=[3.25,3.95,4.65];
+  arW.forEach((e,i)=>{ const s=spring(t-ap[i],0.6,10); e.style.opacity=clamp((t-ap[i])/0.25)*clamp((8.6-t)/0.35);
+    e.style.transform=`translateY(${(1-s)*40}px) scale(${0.92+0.08*s})`; e.style.filter=`blur(${(1-clamp((t-ap[i])/0.35))*8}px)`; });
+  const tr=$('#tr'); tr.style.opacity=win(t,5.4,8.6,0.4,0.35); tr.style.transform=`translateY(${(1-ease((t-5.4)/0.6))*30}px)`;
+  $('#src').style.opacity=win(t,6.1,8.6,0.4,0.35);
+  const en=$('#end'), se=spring(t-8.75,0.6,11);
+  en.style.opacity=clamp((t-8.75)/0.25); en.style.transform=`translateY(${(1-se)*70}px)`;
+  const word='Salwaa', n=Math.floor(clamp((t-9.6)/0.6)*word.length+1e-6);
+  $('#typed').textContent=word.slice(0,n);
+  $('#caret').style.opacity = (Math.floor(t*2.5)%2===0 || (t>9.6&&t<10.2)) ? 1 : 0;
+  $('#gp').style.opacity=clamp((t-10.4)/0.3);
+};
+await document.fonts.load('700 150px Amiri','وَأَقِمِ'); await document.fonts.load('700 96px Poppins'); await document.fonts.load('600 60px Poppins'); await document.fonts.load('500 58px Poppins');
+await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));
+window.renderAt(0); window.__ready = true;
+</script>
+</body></html>
