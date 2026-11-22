@@ -9,6 +9,14 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_22_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Le plus fort,', b: 'c’est celui qui se retient.' },
+    { type: 'phone', app: 'TikTok', prayer: 'Asr', time: '15:42', caps: [
+      [0, '1. L’heure d’Asr arrive.'], [1.6, '2. TikTok se bloque.'],
+      [3.8, '3. Tu pries.'], [5.8, '4. Tu reprends ton écran.']] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Le croyant fort est meilleur et plus aimé d’Allah que le croyant faible, bien qu’il y ait du bien en chacun. Cherche ce qui t’est utile, demande l’aide d’Allah et ne te décourage pas. »', src: 'MUSLIM N° 2664' },
+    { type: 'big', a: 'Un blocage utile,', b: 'une volonté plus forte.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord. Scrolle ensuite.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_20_h1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Un jour, tu prieras', b: 'ta dernière prière.' },
     { type: 'big', a: 'Et tu ne sauras pas', b: 'que c’était elle.', gold: true },
