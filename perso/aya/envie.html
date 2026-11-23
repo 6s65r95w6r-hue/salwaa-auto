@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Salwaa — La chaîne de l'envie</title>
+<style>
+  :root{--gold:#F0B429;--ink:#FCF3E2}
+  html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
+  canvas{position:absolute;inset:0}
+  .ov{position:absolute;left:0;right:0;text-align:center;opacity:0}
+  .g{color:var(--gold)}
+  .cap{top:300px;font:800 74px/1.12 Poppins;letter-spacing:-.02em;color:#fff}
+  .cap .row{display:inline-block;background:rgba(10,7,2,.88);border-radius:22px;padding:10px 30px;margin:5px 0}
+  #hook{top:290px;font:800 92px/1.08 Poppins;letter-spacing:-.03em;color:#fff}
+  #brand{top:120px;font:600 38px Poppins;color:#E7D9BC;display:flex;justify-content:center;align-items:center;gap:14px}
+  #brand img{width:58px;height:58px;border-radius:14px}
+  #had{top:250px;padding:0 80px;text-align:left}
+  #had .k{display:flex;align-items:center;gap:20px;font:600 30px 'Roboto Mono',monospace;letter-spacing:.18em;color:var(--gold)}
+  #had .k i{display:block;width:90px;height:4px;background:var(--gold)}
+  #had .k b{font:400 38px Amiri,serif;letter-spacing:0}
+  #had .ar{margin-top:30px;direction:rtl;text-align:right;font:700 58px/1.55 Amiri,serif;color:var(--gold);text-shadow:0 0 30px rgba(240,180,41,.45)}
+  #had .fr{margin-top:22px;font:800 60px/1.16 Poppins;letter-spacing:-.02em;color:#fff}
+  #had .fr span{display:inline-block;margin-right:.24em}
+  #had .src{margin-top:30px;font:500 28px 'Roboto Mono',monospace;letter-spacing:.16em;color:#BFAE93}
+  #end{top:250px}
+  #end .p{font:800 92px/1.08 Poppins;letter-spacing:-.03em;color:#fff}
+  #end img{display:block;width:200px;height:200px;border-radius:46px;margin:60px auto 34px}
+  #end .t{font:700 66px Poppins;color:var(--ink);letter-spacing:-.02em}
+  #bar{margin:36px auto 0;width:660px;height:116px;border-radius:58px;background:#F4E8C1;display:flex;align-items:center;padding:0 44px;box-sizing:border-box;gap:26px}
+  #typed{font:600 58px Poppins;color:#120C04}
+  #caret{width:5px;height:62px;background:#120C04}
+  #gp{margin-top:28px;font:500 42px Poppins;color:#E7D9BC}
+  #share{margin-top:56px;font:600 48px/1.25 Poppins;color:#fff}
+  #prog{position:absolute;top:0;left:0;height:14px;width:1080px;background:var(--gold);transform-origin:0 0}
+</style></head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<div id="prog"></div>
+<div id="brand" class="ov"><img src="logo-salwaa.png">salwaa</div>
+<div id="hook" class="ov">Tu regardes toujours<br>la vie des <span class="g">autres</span> ?</div>
+<div id="c1" class="ov cap"><span class="row">« Si seulement j'avais</span><br><span class="row">sa <span class="g">villa</span>… »</span></div>
+<div id="c2" class="ov cap"><span class="row">« Si seulement j'avais</span><br><span class="row">sa <span class="g">voiture</span>… »</span></div>
+<div id="c3" class="ov cap"><span class="row">« Si seulement j'avais</span><br><span class="row">un <span class="g">vélo</span>… »</span></div>
+<div id="c4" class="ov cap"><span class="row">« Si seulement je pouvais</span><br><span class="row">me lever pour <span class="g">prier</span>… »</span></div>
+<div id="had" class="ov">
+  <div class="k"><i></i>LE PROPHÈTE <b>صلى الله عليه وسلم</b> A DIT</div>
+  <div class="ar">انظروا إلى من أسفل منكم ولا تنظروا إلى من هو فوقكم فهو أجدر أن لا تزدروا نعمة الله</div>
+  <div class="fr" id="hfr"></div>
+  <div class="src">MUSLIM 2963 · ABÛ HURAYRA</div>
+</div>
+<div id="end" class="ov">
+  <div class="p">Toi, tu peux<br><span class="g">encore prier.</span></div>
+  <img src="logo-salwaa.png">
+  <div class="t">Salwaa : Focus &amp; Salah</div>
+  <div id="bar"><svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#120C04" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg><span id="typed"></span><span id="caret"></span></div>
+  <div id="gp">sur Google Play</div>
+  <div id="share">Envoie-la à quelqu'un<br>qui se compare trop.</div>
+</div>
+<script>
+const DUR = 20.6, F = 1300, GOLD = [240,180,41];
+const $ = s => document.querySelector(s);
+const clamp = (x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const ease = x => 1-Math.pow(1-clamp(x),3);
+const io = x => { x=clamp(x); return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2; };
+const spring = (x,z=.55,w=14)=>{ if(x<=0) return 0; const wd=w*Math.sqrt(1-z*z); return 1-Math.exp(-z*w*x)*(Math.cos(wd*x)+z*w/wd*Math.sin(wd*x)); };
+const win = (t,a,b,fi=.3,fo=.3)=>clamp((t-a)/fi)*clamp((b-t)/fo);
+const col = g => `rgb(${Math.round(255+(GOLD[0]-255)*g)},${Math.round(255+(GOLD[1]-255)*g)},${Math.round(255+(GOLD[2]-255)*g)})`;
+const lerp=(a,b,k)=>a+(b-a)*k, lp=(A,B,k)=>[lerp(A[0],B[0],k),lerp(A[1],B[1],k)];
+
+// ---------- poses (pieds en 0,0 ; y vers le haut négatif) ----------
+const STAND={h:[0,-272],n:[0,-238],hip:[0,-130],eL:[-26,-186],hL:[-32,-132],eR:[26,-186],hR:[32,-132],kL:[-14,-66],fL:[-24,0],kR:[14,-66],fR:[24,0]};
+const SUJUD={h:[92,-26],n:[62,-62],hip:[-34,-96],eL:[74,-26],hL:[104,-3],eR:[80,-24],hR:[110,-3],kL:[-18,-3],fL:[-92,-6],kR:[-12,-3],fR:[-86,-6]};
+function WALK(p){ const s=Math.sin(p), c=Math.cos(p);
+  const fL=[-38*s,-Math.max(0,18*c)], fR=[38*s,-Math.max(0,-18*c)];
+  return {h:[-4,-272],n:[-2,-238],hip:[0,-130],eL:[16*s-4,-186],hL:[30*s-6,-136],eR:[-16*s-4,-186],hR:[-30*s-6,-136],
+    kL:[fL[0]/2-8,-66],fL,kR:[fR[0]/2-8,-66],fR}; }
+function mix(A,B,k){ const o={}; for(const j in A) o[j]=lp(A[j],B[j],k); return o; }
+function fig(ctx,x,y,P,c,s=1){
+  const q=([a,b])=>[x+a*s,y+b*s];
+  ctx.strokeStyle=c; ctx.lineWidth=6*s; ctx.lineCap='round'; ctx.lineJoin='round';
+  const L=(...pts)=>{ctx.beginPath(); pts.forEach((p,i)=>{const [a,b]=q(p); i?ctx.lineTo(a,b):ctx.moveTo(a,b);}); ctx.stroke();};
+  L(P.n,P.hip); L(P.n,P.eL,P.hL); L(P.n,P.eR,P.hR); L(P.hip,P.kL,P.fL); L(P.hip,P.kR,P.fR);
+  const [hx,hy]=q(P.h); ctx.beginPath(); ctx.arc(hx,hy,25*s,0,Math.PI*2); ctx.stroke();
+}
+function path(ctx,x,y,pts,close=false){ ctx.beginPath(); pts.forEach(([a,b],i)=>i?ctx.lineTo(x+a,y+b):ctx.moveTo(x+a,y+b)); if(close) ctx.closePath(); ctx.stroke(); }
+function circ(ctx,x,y,r){ ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.stroke(); }
+
+// ---------- décor : stations ----------
+const X={villa:0, car:700, bike:1400, walk:2100, bed:2620};
+function villa(ctx,x,c){ ctx.strokeStyle=c; ctx.lineWidth=6;
+  path(ctx,x,F,[[-250,0],[-250,-200],[250,-200],[250,0]]);
+  path(ctx,x,F,[[-160,-200],[-160,-340],[210,-340],[210,-200]]);
+  path(ctx,x,F,[[-185,-345],[235,-345]]);
+  path(ctx,x,F,[[-40,0],[-40,-115],[40,-115],[40,0]]);
+  for(const [a,b,w,h] of [[-210,-165,110,70],[100,-165,110,70],[-120,-305,130,80],[60,-305,110,80]]) path(ctx,x,F,[[a,b],[a+w,b],[a+w,b+h],[a,b+h]],true);
+}
+function car(ctx,x,c,t){ ctx.strokeStyle=c; ctx.lineWidth=6;
+  path(ctx,x,F,[[-148,-42],[-185,-42],[-185,-92],[-125,-104],[-70,-158],[62,-158],[122,-104],[185,-94],[185,-42],[150,-42]]);
+  path(ctx,x,F,[[-64,-42],[70,-42]]);
+  path(ctx,x,F,[[-58,-148],[52,-148],[100,-108],[-58,-108]],true);
+  for(const wx of [-106,110]){ circ(ctx,x+wx,F-40,38); circ(ctx,x+wx,F-40,12); }
+}
+function driver(ctx,x,c){ // tête et épaules visibles par la vitre
+  ctx.strokeStyle=c; ctx.lineWidth=6; circ(ctx,x-18,F-176,22);
+  path(ctx,x,F,[[-16,-152],[-14,-112]]); path(ctx,x,F,[[-15,-140],[12,-128],[38,-118]]);
+}
+function bike(ctx,x,c,t,withRider){ ctx.strokeStyle=c; ctx.lineWidth=6;
+  const R=46, rh=[-88,-46], fh=[96,-46], cr=[6,-62], seat=[-14,-150], hb=[70,-188];
+  for(const h of [rh,fh]){ circ(ctx,x+h[0],F+h[1],R); const a=-t*4;
+    for(let k=0;k<3;k++){ const b=a+k*Math.PI/3; path(ctx,x,F,[[h[0]+Math.cos(b)*R,h[1]+Math.sin(b)*R],[h[0]-Math.cos(b)*R,h[1]-Math.sin(b)*R]]); } }
+  path(ctx,x,F,[rh,cr,fh]); path(ctx,x,F,[rh,seat,cr]); path(ctx,x,F,[seat,[58,-150],cr]); path(ctx,x,F,[fh,[58,-150],hb,[84,-196]]);
+  if(withRider){ const a=t*4, f1=[cr[0]+Math.cos(a)*24,cr[1]+Math.sin(a)*24], f2=[cr[0]-Math.cos(a)*24,cr[1]-Math.sin(a)*24];
+    const hip=[-12,-160], k=(f)=>[(hip[0]+f[0])/2+26,(hip[1]+f[1])/2-14];
+    fig(ctx,x,F,{h:[44,-296],n:[30,-262],hip,eL:[54,-226],hL:[76,-194],eR:[52,-228],hR:[74,-196],kL:k(f1),fL:f1,kR:k(f2),fR:f2},c,1); }
+}
+function rug(ctx,x,c,k){ if(k<=0) return; ctx.strokeStyle=c; ctx.lineWidth=5; const w=230*k;
+  path(ctx,x,F,[[-110,0],[-110+w,0]]); path(ctx,x,F,[[-110,-8],[-110+w,-8]]);
+  if(k>.95){ path(ctx,x,F,[[95,-8],[112,-8]]); }
+}
+function bed(ctx,x,c){ ctx.strokeStyle=c; ctx.lineWidth=6;
+  path(ctx,x,F,[[-160,-112],[160,-112]]); path(ctx,x,F,[[-160,-90],[160,-90]]);
+  path(ctx,x,F,[[-150,-90],[-150,0]]); path(ctx,x,F,[[150,-90],[150,0]]); path(ctx,x,F,[[-160,-210],[-160,-90]]);
+  path(ctx,x,F,[[-215,0],[-215,-320]]); path(ctx,x,F,[[-240,-322],[-190,-322]]);
+  path(ctx,x,F,[[-232,-310],[-198,-310],[-198,-260],[-232,-260]],true);
+  ctx.beginPath(); ctx.moveTo(x-215,F-258); ctx.quadraticCurveTo(x-180,F-140,x-70,F-128); ctx.stroke();
+  // l'homme allongé, tête relevée vers la gauche
+  fig(ctx,x,F,{h:[-112,-150],n:[-82,-130],hip:[34,-122],eL:[-34,-124],hL:[12,-120],eR:[-30,-126],hR:[16,-122],kL:[86,-124],fL:[138,-120],kR:[86,-126],fR:[138,-122]},c,1);
+  // couverture
+  ctx.beginPath(); ctx.moveTo(x-50,F-118); ctx.quadraticCurveTo(x+40,F-160,x+150,F-122); ctx.stroke();
+}
+function gaze(ctx,a,b,t,t0){ const k=ease((t-t0)/0.6); if(k<=0) return;
+  ctx.save(); ctx.setLineDash([16,14]); ctx.lineDashOffset=-t*60; ctx.strokeStyle='rgba(240,180,41,.95)'; ctx.lineWidth=4;
+  ctx.beginPath(); ctx.moveTo(a[0],a[1]); ctx.lineTo(lerp(a[0],b[0],k),lerp(a[1],b[1],k)); ctx.stroke(); ctx.restore(); }
+
+// ---------- monde ----------
+function world(ctx,t){
+  const all = ease((t-13.6)/0.6);
+  const G = (t0,base=0)=>Math.max(base, ease((t-t0)/0.5), all);
+  const walkP = WALK(t*5.2);
+  const pray = t<10.8 ? walkP : (t<11.15 ? mix(walkP,STAND,ease((t-10.8)/0.35)) : mix(STAND,SUJUD,io((t-11.15)/0.7)));
+  villa(ctx,X.villa,col(G(3.0)));
+  car(ctx,X.car,col(G(5.9)),t); driver(ctx,X.car,col(all));
+  bike(ctx,X.bike,col(G(8.7)),t,true);
+  const pg=G(12.0); rug(ctx,X.walk+40,col(pg),ease((t-10.7)/0.5)); fig(ctx,X.walk,F,pray,col(pg),1);
+  bed(ctx,X.bed,col(all));
+  return {heads:{car:[X.car-18,F-176],bike:[X.bike+44,F-296],walk:[X.walk-4,F-272],bed:[X.bed-112,F-150]},
+          tg:{villa:[X.villa+90,F-200],car:[X.car+30,F-112],bike:[X.bike,F-110],walk:[X.walk+40,F-70]}};
+}
+
+// ---------- caméra ----------
+function camAt(t){
+  const seg=[[0,350],[4.6,350],[5.1,1050],[7.4,1050],[7.9,1750],[10.2,1750],[10.7,2370],[13.4,2370]];
+  let cx=350;
+  for(let i=0;i<seg.length-1;i++){ const [a,va]=seg[i],[b,vb]=seg[i+1]; if(t>=a&&t<=b) cx=lerp(va,vb,io((t-a)/(b-a))); }
+  if(t>13.4) cx=lerp(2370,1310,io((t-13.4)/0.9));
+  const s = t<13.4 ? 1 : Math.pow(0.3, io((t-13.4)/0.9));
+  const fy = lerp(F, 1520, io((t-13.4)/0.9));       // la rangée descend pour laisser place au hadith
+  return {cx,s,fy};
+}
+const cv=$('#c'), ctx=cv.getContext('2d');
+function draw(t){
+  const {cx,s,fy}=camAt(t);
+  ctx.setTransform(1,0,0,1,0,0); ctx.fillStyle='#000'; ctx.fillRect(0,0,1080,1920);
+  const fade=1-ease((t-17.6)/0.4);                      // la scène s'efface derrière la fin
+  // halo doux autour de la station regardée
+  const hg=ctx.createRadialGradient(540,fy-200,0,540,fy-200,620); hg.addColorStop(0,`rgba(240,180,41,${.07*fade})`); hg.addColorStop(1,'rgba(240,180,41,0)');
+  ctx.fillStyle=hg; ctx.fillRect(0,0,1080,1920);
+  let geo;
+  const scene=(flip)=>{ ctx.save();
+    ctx.translate(540,fy); ctx.scale(s, flip? -s : s); ctx.translate(-cx,-F);
+    ctx.shadowColor= flip?'transparent':'rgba(255,255,255,.55)'; ctx.shadowBlur= flip?0:14;
+    geo=world(ctx,t);
+    if(!flip){ ctx.shadowBlur=10; ctx.shadowColor='rgba(240,180,41,.8)';
+      gaze(ctx,geo.heads.car,geo.tg.villa,t,2.5); gaze(ctx,geo.heads.bike,geo.tg.car,t,5.4);
+      gaze(ctx,geo.heads.walk,geo.tg.bike,t,8.2); gaze(ctx,geo.heads.bed,geo.tg.walk,t,11.5); }
+    ctx.restore(); };
+  ctx.globalAlpha=0.2*fade; ctx.filter='blur(3px)'; scene(true); ctx.filter='none';
+  ctx.globalAlpha=fade; scene(false); ctx.globalAlpha=1;
+  // sol
+  const fg=ctx.createLinearGradient(0,0,1080,0); fg.addColorStop(0,'rgba(255,255,255,0)'); fg.addColorStop(.15,`rgba(255,255,255,${.5*fade})`); fg.addColorStop(.85,`rgba(255,255,255,${.5*fade})`); fg.addColorStop(1,'rgba(255,255,255,0)');
+  ctx.fillStyle=fg; ctx.fillRect(0,fy,1080,3);
+  // voile sous le reflet
+  const vg=ctx.createLinearGradient(0,fy,0,fy+420); vg.addColorStop(0,'rgba(0,0,0,0)'); vg.addColorStop(1,'rgba(0,0,0,1)'); ctx.fillStyle=vg; ctx.fillRect(0,fy+3,1080,420);
+}
+
+// ---------- textes ----------
+const hfr=$('#hfr'), FR="« Regardez ceux qui sont en dessous de vous, et ne regardez pas ceux qui sont au-dessus de vous : c'est plus à même de ne pas mépriser les bienfaits d'Allah.\u00a0»";
+hfr.innerHTML=FR.split(' ').map(w=>`<span${/bienfaits|dessous/.test(w)?' class="g"':''}>${w}</span>`).join('');
+const hw=[...hfr.children];
+function show(el,a,b,fi=.25,fo=.25,dy=50){ const o=win(t_,a,b,fi,fo), sp=spring(t_-a); el.style.opacity=o; el.style.transform=`translateY(${(1-sp)*dy}px)`; }
+let t_=0;
+window.renderAt=function(t){ t_=t; draw(t);
+  $('#prog').style.transform=`scaleX(${clamp(t/DUR)})`;
+  $('#brand').style.opacity=win(t,0.2,13.3,.4,.3);
+  show($('#hook'),0.08,2.2,.15,.25,70);
+  show($('#c1'),2.3,4.6); show($('#c2'),5.2,7.4); show($('#c3'),8.0,10.2); show($('#c4'),11.0,13.4);
+  const h=$('#had'); h.style.opacity=win(t,14.2,17.7,.35,.3); h.style.transform=`translateY(${(1-ease((t-14.2)/.5))*30}px)`;
+  hw.forEach((e,i)=>{ const a=14.6+i*0.06; e.style.opacity=clamp((t-a)/.2); e.style.transform=`translateY(${(1-ease((t-a)/.35))*24}px)`; });
+  const en=$('#end'); en.style.opacity=clamp((t-17.8)/.3); en.style.transform=`translateY(${(1-spring(t-17.8,.6,11))*60}px)`;
+  const word='Salwaa', n=Math.floor(clamp((t-18.5)/0.6)*word.length+1e-6); $('#typed').textContent=word.slice(0,n);
+  $('#caret').style.opacity=(Math.floor(t*2.5)%2===0||(t>18.5&&t<19.1))?1:0;
+  $('#gp').style.opacity=clamp((t-19.1)/.3); $('#share').style.opacity=clamp((t-19.4)/.3);
+};
+(async()=>{ await document.fonts.load('800 92px Poppins'); await document.fonts.load('600 58px Poppins'); await document.fonts.load('700 66px Amiri','انظروا');
+  await document.fonts.load('600 30px "Roboto Mono"'); await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));
+  window.renderAt(0); window.__ready=true; })();
+</script>
+</body></html>

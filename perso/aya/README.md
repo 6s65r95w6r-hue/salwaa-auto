@@ -6,3 +6,6 @@
   `node render_at.mjs http://127.0.0.1:8765/reel.html video.mp4 12` (images fixes : `... st/s 12 "1.8,4.2,7.2"`).
 - Son : `python3 sound.py` puis mixer comme dans ../README.md.
 - Pour un autre verset : changer les 3 mots de `#ar`, `#tr`, `#src` et les instants `ap` dans `renderAt`.
+
+- `envie.html` (canvas 2D, sans Three.js) : rendre avec `NOGL=1 node render_at.mjs http://127.0.0.1:8765/envie.html video.mp4 20.6`, son `sound3.py`.
+- `ombre.html` : variante Three.js (hadith Al-Bukhârî 660), son `sound2.py`.

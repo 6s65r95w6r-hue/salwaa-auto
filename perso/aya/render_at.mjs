@@ -3,7 +3,7 @@ import pw from '/opt/npm-tools/node_modules/playwright/index.js'; const { chromi
 import { spawn } from 'node:child_process';
 const [url, out, durS, stills] = process.argv.slice(2);
 const DUR = parseFloat(durS), FPS = 30;
-const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+const browser = await chromium.launch(process.env.NOGL ? {} : { args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
 const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
 page.on('console', m => { if (m.type() === 'error') console.error('page:', m.text()); });
 page.on('pageerror', e => console.error('pageerror:', e.message));
