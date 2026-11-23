@@ -51,6 +51,15 @@ const VIDEOS = {
     { type: 'list', mode: 'check', title: 'Un vendredi bien commencé', items: [{ t: 'Lire Al-Kahf, même quelques versets' }, { t: 'Prier à l’heure, sans repousser' }, { t: 'Multiplier les salutations sur le Prophète ﷺ' }] },
     { type: 'big', a: 'Quelques versets,', b: 'une lumière pour la semaine.', gold: true },
     { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
+  d2026_11_23_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Les excuses', b: 'pour repousser Fajr.' },
+    { type: 'list', mode: 'rank', title: 'Le top 3 du réveil', items: [
+      { n: '01', t: 'Encore 5 minutes', s: 'Les 5 minutes qui deviennent 50. (exemple)' },
+      { n: '02', t: 'Il fait trop froid', s: 'Le lit est chaud, le Paradis aussi.' },
+      { n: '03', t: 'Je prie en me levant', s: 'Le Fajr a une heure, pas une option.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui accomplit les deux prières fraîches entrera au Paradis. »', src: 'AL-BOUKHÂRÎ N° 574 · MUSLIM N° 635' },
+    { type: 'big', a: 'Fajr et Asr,', b: 'deux clés du Paradis.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_19_1: { theme: 'light', scenes: [
     { type: 'big', a: 'Les excuses', b: 'pour repousser Asr.' },
     { type: 'list', mode: 'rank', title: 'Le top 3 de l’après-midi', items: [
