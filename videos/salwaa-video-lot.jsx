@@ -9,6 +9,12 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_24_1: { theme: 'light', scenes: [
+    { type: 'big', a: 'Deux rak’a,', b: 'sans distraction.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Celui qui fait ses ablutions comme je les ai faites, puis prie deux rak’a sans que son esprit ne s’égare, ses péchés passés lui seront pardonnés. »', src: 'AL-BOUKHÂRÎ N° 159 · MUSLIM N° 226' },
+    { type: 'list', mode: 'check', title: 'Pour une prière présente', items: [{ t: 'Des ablutions bien faites' }, { t: 'Le téléphone loin de toi' }, { t: 'Le cœur dans la prière' }] },
+    { type: 'big', a: 'Cinq minutes de présence,', b: 'un cœur plus léger.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_22_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Le plus fort,', b: 'c’est celui qui se retient.' },
     { type: 'phone', app: 'TikTok', prayer: 'Asr', time: '15:42', caps: [
