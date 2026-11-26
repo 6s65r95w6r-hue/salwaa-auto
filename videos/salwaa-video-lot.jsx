@@ -9,6 +9,14 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_26_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Ton frère aussi', b: 'a un écran.' },
+    { type: 'phone', app: 'Instagram', prayer: 'Dhuhr', time: '12:41', caps: [
+      [0, '1. L’heure de Dhuhr arrive.'], [1.6, '2. Instagram se bloque.'],
+      [3.8, '3. Tu pries.'], [5.8, '4. Tu reprends ton écran.']] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Aucun de vous ne croit vraiment tant qu’il n’aime pas pour son frère ce qu’il aime pour lui-même. »', src: 'AL-BOUKHÂRÎ N° 13 · MUSLIM N° 45' },
+    { type: 'big', a: 'Ce qui t’aide à prier', b: 'peut l’aider aussi.', gold: true },
+    { type: 'payoff', a: 'Partage-lui le rappel.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_25_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Le meilleur d’entre nous', b: 'a une habitude simple.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Le meilleur d’entre vous est celui qui apprend le Coran et l’enseigne. »', src: 'AL-BOUKHÂRÎ N° 5027' },
