@@ -9,6 +9,12 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_27_1: { theme: 'light', scenes: [
+    { type: 'big', a: 'Vendredi,', b: 'un jour à ne pas rater.' },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Parmi les meilleurs de vos jours est le vendredi. Multipliez donc vos salutations sur moi ce jour-là, car elles me sont présentées. »', src: 'ABÛ DÂWÛD N° 1047' },
+    { type: 'list', mode: 'check', title: 'Un vendredi réussi', items: [{ t: 'Des salutations sur le Prophète ﷺ' }, { t: 'Quelques versets d’Al-Kahf' }, { t: 'La prière de Jumu’a à l’heure' }] },
+    { type: 'big', a: 'Un jour béni,', b: 'à vivre sans distraction.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_26_1: { theme: 'dark', scenes: [
     { type: 'big', a: 'Ton frère aussi', b: 'a un écran.' },
     { type: 'phone', app: 'Instagram', prayer: 'Dhuhr', time: '12:41', caps: [
