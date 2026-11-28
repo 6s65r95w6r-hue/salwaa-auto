@@ -9,6 +9,15 @@ const ease = (T, s, d, e = Easing.easeOutCubic) => animate({ from: 0, to: 1, sta
 const fade = (T, s, e, d = 0.35) => ease(T, s, d) * (1 - ease(T, e - 0.3, 0.3));
 
 const VIDEOS = {
+  d2026_11_28_1: { theme: 'dark', scenes: [
+    { type: 'big', a: 'Ton pouce', b: 'ne se repose jamais.' },
+    { type: 'list', mode: 'rank', title: 'Ce qui bouge le plus', items: [
+      { n: '01', t: 'Le pouce qui scrolle', s: 'Des heures, sans jamais fatiguer. (exemple)' },
+      { n: '02', t: 'Les yeux sur l’écran', s: 'Un reel, puis un autre, puis un autre.' },
+      { n: '03', t: 'La langue qui rappelle Allah', s: 'Le seul qui compte vraiment.', hi: true }] },
+    { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Que ta langue ne cesse d’être humide du rappel d’Allah. »', src: 'AT-TIRMIDHÎ N° 3375 (HASAN)' },
+    { type: 'big', a: 'Un peu de dhikr,', b: 'entre deux scrolls.', gold: true },
+    { type: 'payoff', a: 'Prie d’abord.', g: 'Salwaa s’occupe du reste.' }] },
   d2026_11_27_1: { theme: 'light', scenes: [
     { type: 'big', a: 'Vendredi,', b: 'un jour à ne pas rater.' },
     { type: 'hadith', kicker: 'LE PROPHÈTE ﷺ A DIT', q: '« Parmi les meilleurs de vos jours est le vendredi. Multipliez donc vos salutations sur moi ce jour-là, car elles me sont présentées. »', src: 'ABÛ DÂWÛD N° 1047' },
